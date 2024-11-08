@@ -1,0 +1,2319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary Search</title>
+    <style>
+        
+        * {
+        text-align: center;
+    }
+    h2 {
+        color: blue;
+    }
+    .toc-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      text-align: center;
+    }
+    .toc-item {
+      padding: 0.5rem 1rem;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 1.2rem;
+      text-align: center;
+      width: 50px;
+      text-align: center;
+    }
+    .toc-item:hover {
+      background-color: #0056b3;
+    }
+    #highlighter {
+	min-height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+#highlighter > div:nth-of-type(1) {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#highlighter > div:nth-of-type(1) > h1 {
+	font-size: 5rem;
+	margin-bottom: 10px;
+}
+#highlighter > div:nth-of-type(1) > p {
+	max-width: 80%;
+}
+#highlighter > div:nth-of-type(2) {
+	padding: 10px;
+	margin: 0 10px;
+}
+#highlighter > div:nth-of-type(3) > h6 {
+	font-size: 2rem;
+}
+#highlighter > div:nth-of-type(3) > ul {
+	list-style-type: none;
+}
+
+#highlighter > div:nth-of-type(3) b {
+	font-size: 1.2rem;
+}
+.highlight {
+	background-color: var(--theme);
+}
+.highlightt {
+            background-color: yellow;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="text" id="searchBox" placeholder="Enter a word to search">
+    <button onclick="searchAndHighlight()">Search</button>
+    
+    <div id="dictionary">
+        
+        
+
+        <div contenteditable="true">
+            <h2><a id="chap26"></a>Z
+            Z (ze; in England commonly, and in America sometimes, zêd; formerly,
+            also, îz"zêrd)</h2>
+            <p>Defn: Z, the twenty-sixth and last letter of the English alphabet, is
+            a vocal consonant. It is taken from the Latin letter Z, which came
+            from the Greek alphabet, this having it from a Semitic source. The
+            ultimate origin is probably Egyptian. Etymologically, it is most
+            closely related to s, y, and j; as in glass, glaze; E. yoke, Gr.
+            yugum; E. zealous, jealous. See Guide to Pronunciation, §§ 273, 274.</p>
+            <p>ZA<br>
+            Za, n. (Min.)
+            </p>
+            <p>Defn: An old solfeggio name for B flat; the seventh harmonic, as
+            heard in the or æolian string; — so called by Tartini. It was long
+            considered a false, but is the true note of the chord of the flat
+            seventh. H. W. Poole.</p>
+            <p>ZABAISM; ZABISM<br>
+            Za"ba*ism, Za"bism, n.
+            </p>
+            <p>Defn: See Sabianism.</p>
+            <p>ZABIAN<br>
+            Za"bi*an, a. &amp; n.
+            </p>
+            <p>Defn: See Sabian.</p>
+            <p>ZACCO<br>
+            Zac"co, n. (Arch.)
+            </p>
+            <p>Defn: See Zocco.</p>
+            <p>ZACHUN<br>
+            Za*chun", n. (Bot.)
+            </p>
+            <p>Defn: An oil pressed by the Arabs from the fruit of a small thorny
+            tree (Balanites Ægyptiaca), and sold to piligrims for a healing
+            ointment. J. Smith (Dict. Econ. Plants).</p>
+            <p>ZAERTHE<br>
+            Zaer"the, n. (Zoöl.)
+            </p>
+            <p>Defn: Same as Zärthe.</p>
+            <p>ZAFFER
+            Zaf"fer, n. Etym: [F. zafre, safre; cf. Sp. zafra, safra, It.
+            saffera, G. zaffer; all probably of Arabic origin. Cf. Zaphara.]</p>
+            <p>Defn: A pigment obtained, usually by roasting cobalt glance with sand
+            or quartz, as a dark earthy powder. It consists of crude cobalt
+            oxide, or of an impure cobalt arseniate. It is used in porcelain
+            painting, and in enameling pottery, to produce a blue color, and is
+            often confounded with smalt, from which, however, it is distinct, as
+            it contains no potash. The name is often loosely applied to mixtures
+            of zaffer proper with silica, or oxides of iron, manganese, etc.
+            [Written also zaffre, and formerly zaffree, zaffar, zaffir.]</p>
+            <p>ZAIM<br>
+            Zaim, n. Etym: [Turk. &amp; Ar. za'im.]
+            </p>
+            <p>Defn: A Turkish chief who supports a mounted militia bearing the same
+            name. Smart.</p>
+            <p>ZAIMET<br>
+            Zaim"et, n. Etym: [Turk. &amp; Ar. za'imet.]
+            </p>
+            <p>Defn: A district from which a Zaim draws his revenue. Smart.</p>
+            <p>ZAIN<br>
+            Zain, n.
+            </p>
+            <p>Defn: A horse of a dark color, neither gray nor white, and having no
+            spots. Smart.</p>
+            <p>ZALAMBDODONT<br>
+            Za*lamb"do*dont, a. (Zoöl.)
+            </p>
+            <p>Defn: Of or pertaining to a tribe (Zalambdodonta) of Insectivora in
+            which the molar teeth have but one V-shaped ridge.</p>
+            <p>ZALAMBDODONT<br>
+            Za*lamb"do*dont, n.
+            </p>
+            <p>Defn: One of the Zalambdodonta. The tenrec, solenodon, and golden
+            moles are examples.</p>
+            <p>ZAMANG<br>
+            Za*mang", n. (Bot.)
+            </p>
+            <p>Defn: An immense leguminous tree (Pithecolobium Saman) of Venezuela.
+            Its branches form a hemispherical mass, often one hundred and eighty
+            feet across. The sweet pulpy pods are used commonly for feeding
+            cattle. Also called rain tree. J. Smith (Dict. Econ. Plants).</p>
+            <p>ZAMBO<br>
+            Zam"bo, n.; pl. Zambos. Etym: [See Sambo.]
+            </p>
+            <p>Defn: The child of a mulatto and a negro; also, the child of an<br>
+            Indian and a negro; colloquially or humorously, a negro; a sambo.
+            </p>
+            <p>ZAMIA<br>
+            Za"mi*a, n. Etym: [L. zamia a kind of fir cone, from Gr. (Bot.)
+            </p>
+            <p>Defn: A genus of cycadaceous plants, having the appearance of low
+            palms, but with exogenous wood. See Coontie, and Illust. of Strobile.</p>
+            <p>ZAMINDAR
+            Zam`in*dar", n. Etym: [Hind. zemindar, zamindar, a landholder, Per.
+            zamindar; zamin land dar holding.]</p>
+            <p>Defn: A landowner; also, a collector of land revenue; now, usually, a
+            kind of feudatory recognized as an actual proprietor so long as he
+            pays to the government a certain fixed revenue. [Written also
+            zemindar.] [India]</p>
+            <p>ZAMINDARY; ZAMINDARI<br>
+            Zam"in*da*ry, Zam"in*da*ri, n.
+            </p>
+            <p>Defn: The jurisdiction of a zamindar; the land possessed by a
+            zamindar. [Written also zemindary, zemindari.]</p>
+            <p>ZAMITE<br>
+            Za"mite, n. (Paleon.)
+            </p>
+            <p>Defn: A fossil cycad of the genus Zamia.</p>
+            <p>ZAMOUSE<br>
+            Za*mouse", n. Etym: [From a native name.] (Zoöl.)
+            </p>
+            <p>Defn: A West African buffalo (Bubalus brachyceros) having short horns
+            depressed at the base, and large ears fringed internally with three
+            rows of long hairs. It is destitute of a dewlap. Called also short-
+            horned buffalo, and bush cow.</p>
+            <p>ZAMPOGNA<br>
+            Zam*po"gna, n. Etym: [It.] (Mus.)
+            </p>
+            <p>Defn: A sort of bagpipe formerly in use among Italian peasants. It is
+            now almost obsolete. [Written also zampugna.]</p>
+            <p>ZANDER<br>
+            Zan"der, n. Etym: [Cf. D. zand sand.] (Zoöl.)
+            </p>
+            <p>Defn: A European pike perch (Stizostedion lucioperca) allied to the
+            wall-eye; — called also sandari, sander, sannat, schill, and zant.</p>
+            <p>ZANDMOLE
+            Zand"mole`, n. Etym: [Cf. D. zand sand. See Sand, and Mole the
+            animal.] (Zoöl.)</p>
+            <p>Defn: The sand mole.</p>
+            <p>ZANTE<br>
+            Zan"te, n. (Bot.)
+            </p>
+            <p>Defn: See Zantewood.</p>
+            <p>ZANTE CURRANT<br>
+            Zan"te cur"rant.
+            </p>
+            <p>Defn: A kind of seedless grape or raisin; — so called from Zante,
+            one of the Ionian Islands.</p>
+            <p>ZANTEWOOD
+            Zan"te*wood`, n. (Bot.)
+            (a) A yellow dyewood; fustet; — called also zante, and zante fustic.
+            See Fustet, and the Note under Fustic.
+            (b) Satinwood (Chloroxylon Swietenia).</p>
+            <p>ZANTIOT<br>
+            Zan"ti*ot, n.
+            </p>
+            <p>Defn: A native or inhabitant of Zante, one of the Ionian Islands.</p>
+            <p>ZANY<br>
+            Za"ny, n.; pl. Zanies. Etym: [It. zanni a buffoon, merry-andrew,<br>
+            orig. same as Giovanni John, i. e., merry John, L. Ioannes, Gr.<br>
+            Yokhanan, prop., the Lord graciously gave: cf. F. zani, fr. the<br>
+            Italian. Cf. Jenneting.]
+            </p>
+            <p>Defn: A merry-andrew; a buffoon.<br>
+            Then write that I may follow, and so be Thy echo, thy debtor, thy<br>
+            foil, thy zany. Donne.<br>
+            Preacher at once, and zany of thy age. Pope.
+            </p>
+            <p>ZANY<br>
+            Za"ny, v. t.
+            </p>
+            <p>Defn: To mimic. [Obs.]<br>
+            Your part is acted; give me leave at distance To zany it. Massinger.
+            </p>
+            <p>ZANYISM<br>
+            Za"ny*ism, n.
+            </p>
+            <p>Defn: State or character of a zany; buffoonery. Coleridge. H. Morley.</p>
+            <p>ZAPAS<br>
+            Za*pas", n. [Russ.]
+            </p>
+            <p>Defn: See Army organization, above.</p>
+            <p>ZAPATERA<br>
+            Za`pa*te"ra, n. [Sp. aceituna zapatera.] (Olive trade)
+            </p>
+            <p>Defn: A cured olive which has spoiled or is on the verge of
+            decomposition; loosely, an olive defective because of bruises,
+            wormholes, or the like.</p>
+            <p>ZAPHARA<br>
+            Zaph"a*ra, n.
+            </p>
+            <p>Defn: Zaffer.</p>
+            <p>ZAPHRENTIS<br>
+            Za*phren"tis, n. Etym: [NL.] (Paleon.)
+            </p>
+            <p>Defn: An extinct genus of cyathophylloid corals common in the
+            Paleozoic formations. It is cup-shaped with numerous septa, and with
+            a deep pit in one side of the cup.</p>
+            <p>ZAPOTILLA<br>
+            Zap`o*til"la, n. (Bot.)
+            </p>
+            <p>Defn: See Sapodilla.</p>
+            <p>ZAPTIAH<br>
+            Zap"ti*ah, n.
+            </p>
+            <p>Defn: A Turkish policeman. [Written also zaptieh.]</p>
+            <p>ZARATHUSTRIAN; ZARATHUSTRIC<br>
+            Zar`a*thus"tri*an, Zar`a*thus"tric, a.
+            </p>
+            <p>Defn: Of or pertaining to Zarathustra, or Zoroaster; Zoroastrian.<br>
+            Tylor.
+            </p>
+            <p>ZARATHUSTRISM<br>
+            Zar`a*thus"trism, n.
+            </p>
+            <p>Defn: See Zoroastrianism.</p>
+            <p>ZARATITE<br>
+            Zar"a*tite, n. (Min.) Etym: [Named after Gen. Zarata of Spain.]
+            </p>
+            <p>Defn: A hydrous carbonate of nickel occurring as an emerald-green
+            incrustation on chromite; — called also emerald nickel.</p>
+            <p>ZAREBA<br>
+            Za*re"ba, n. (Mil.)
+            </p>
+            <p>Defn: An improvised stockade; especially, one made of thorn bushes,
+            etc. [Written also zareeba, and zeriba.] [Egypt]
+            "Ah," he moralizes, "what wonderful instinct on the part of this
+            little creature to surround itself with a zareba like the troops
+            after Osman Digma." R. Jefferies.</p>
+            <p>ZARF<br>
+            Zarf, n. [Ar.] (Art)
+            </p>
+            <p>Defn: A metallic cuplike stand used for holding a finjan.</p>
+            <p>ZARNICH<br>
+            Zar"nich, n. Etym: [F., fr. Ar. az-zernikh, fr. Gr. Arsenic.] (Min.)
+            </p>
+            <p>Defn: Native sulphide of arsenic, including sandarach, or realgar,
+            and orpiment.</p>
+            <p>ZARTHE; ZAERTHE<br>
+            Zär"the, n. (Zoöl.)
+            </p>
+            <p>Defn: A European bream (Abramis vimba). [Written also zaerthe.]</p>
+            <p>ZASTRUGI
+            Zas*tru"gi, n. pl.; sing. -ga (#). [Russ. zastruga furrow made on the
+            shore by water.]</p>
+            <p>Defn: Grooves or furrows formed in snow by the action of the wind,
+            and running parallel with the direction of the wind. This formation
+            results from the erosion of transverse waves previously formed.</p>
+            <p>ZATI<br>
+            Za"ti, n. (Zoöl.)
+            </p>
+            <p>Defn: A species of macaque (Macacus pileatus) native of India and
+            Ceylon. It has a crown of long erect hair, and tuft of radiating
+            hairs on the back of the head. Called also capped macaque.</p>
+            <p>ZAUSCHNERIA
+            Zau*schne"ri*a, n. Etym: [NL., named for M. Zauschner, a Bohemian
+            botanist.] (Bot.)</p>
+            <p>Defn: A genus of flowering plants. Zauschneria Californica is a
+            suffrutescent perennial, with showy red flowers much resembling those
+            of the garden fuchsia.</p>
+            <p>ZAX<br>
+            Zax, n.
+            </p>
+            <p>Defn: A tool for trimming and puncturing roofing states. [Written
+            also sax.]</p>
+            <p>ZAYAT<br>
+            Za"yat, n.
+            </p>
+            <p>Defn: A public shed, or portico, for travelers, worshipers, etc.<br>
+            [Burmah]
+            </p>
+            <p>ZEA<br>
+            Ze"a, n. Etym: [L., a kind of grain, fr. Gr. yava barley.] (Bot.)
+            </p>
+            <p>Defn: A genus of large grasses of which the Indian corn (Zea Mays) is
+            the only species known. Its origin is not yet ascertained. See Maize.</p>
+            <p>ZEAL
+            Zeal, n. Etym: [F. zèle; cf. Pg. &amp; It. zelo, Sp. zelo, celo; from L.
+            zelus, Gr. Yeast, Jealous.]</p>
+            <p>1. Passionate ardor in the pursuit of anything; eagerness in favor of
+            a person or cause; ardent and active interest; engagedness;
+            enthusiasm; fervor. "Ambition varnished o'er with zeal." Milton.
+            "Zeal, the blind conductor of the will." Dryden. "Zeal's never-dying
+            fire." Keble.
+            I bear them record that they have a zeal of God, but not according to
+            knowledge. Rom. x. 2.
+            A zeal for liberty is sometimes an eagerness to subvert with little
+            care what shall be established. Johnson.</p>
+            <p>2. A zealot. [Obs.] B. Jonson.</p>
+            <p>ZEAL<br>
+            Zeal, v. i.
+            </p>
+            <p>Defn: To be zealous. [Obs. &amp; R.] Bacon.</p>
+            <p>ZEALANT<br>
+            Zeal"ant, n.
+            </p>
+            <p>Defn: One who is zealous; a zealot; an enthusiast. [Obs.]<br>
+            To certain zealants, all speech of pacification is odious. Bacon.
+            </p>
+            <p>ZEALED<br>
+            Zealed, a.
+            </p>
+            <p>Defn: Full of zeal; characterized by zeal. [Obs.] "Zealed religion."<br>
+            Beau. &amp; Fl.
+            </p>
+            <p>ZEALFUL<br>
+            Zeal"ful, a.
+            </p>
+            <p>Defn: Full of zeal. [R.] Sylvester.</p>
+            <p>ZEALLESS<br>
+            Zeal"less, a.
+            </p>
+            <p>Defn: Wanting zeal. Hammond.</p>
+            <p>ZEALOT<br>
+            Zeal"ot, n. Etym: [F. zélote, L. zelotes, Gr. Zeal.]
+            </p>
+            <p>Defn: One who is zealous; one who engages warmly in any cause, and
+            pursues his object with earnestness and ardor; especially, one who is
+            overzealous, or carried away by his zeal; one absorbed in devotion to
+            anything; an enthusiast; a fanatical partisan.
+            Zealots for the one [tradition] were in hostile array against zealots
+            for the other. Sir J. Stephen.
+            In Ayrshire, Clydesdale, Nithisdale, Annandale, every parish was
+            visited by these turbulent zealots. Macaulay.</p>
+            <p>ZEALOTICAL<br>
+            Zea*lot"ic*al, a.
+            </p>
+            <p>Defn: Like, or suitable to, a zealot; ardently zealous. [R.] Strype.</p>
+            <p>ZEALOTISM<br>
+            Zeal"ot*ism, n.
+            </p>
+            <p>Defn: The character or conduct of a zealot; zealotry.</p>
+            <p>ZEALOTIST<br>
+            Zeal"ot*ist, n.
+            </p>
+            <p>Defn: A zealot. [Obs.] Howell.</p>
+            <p>ZEALOTRY<br>
+            Zeal"ot*ry, n.
+            </p>
+            <p>Defn: The character and behavior of a zealot; excess of zeal;
+            fanatical devotion to a cause.
+            Enthusiasm, visionariness, seems the tendency of the German; zeal,
+            zealotry, of the English; fanaticism, of the French. Coleridge.</p>
+            <p>ZEALOUS<br>
+            Zeal"ous, a. Etym: [LL. zelosus. See Zeal.]
+            </p>
+            <p>1. Filled with, or characterized by, zeal; warmly engaged, or ardent,
+            in behalf of an object.
+            He may be zealous in the salvation of souls. Law.</p>
+            <p>2. Filled with religious zeal. [Obs.] Shak.<br>
+             — Zeal"ous*ly, adv.<br>
+             — Zeal"ous*ness, n.
+            </p>
+            <p>ZEBEC<br>
+            Ze"bec, n. (Naut.)
+            </p>
+            <p>Defn: See Xebec.</p>
+            <p>ZEBRA<br>
+            Ze"bra, n. Etym: [Pg. zebra; cf. Sp. cebra; probably from a native<br>
+            African name.] (Zoöl.)
+            </p>
+            <p>Defn: Either one of two species of South African wild horses
+            remarkable for having the body white or yellowish white, and
+            conspicuously marked with dark brown or brackish bands.</p>
+            <p>Note: The true or mountain zebra (Equus, or Asinus, zebra) is nearly
+            white, and the bands which cover the body and legs are glossy black.
+            Its tail has a tuft of black hair at the tip. It inhabits the
+            mountains of Central and Southern Africa, and is noted for its
+            wariness and wildness, as well as for its swiftness. The second
+            species (Equus, or Asinus, Burchellii), known as Burchell's zebra,
+            and dauw, inhabits the grassy plains of South Africa, and differs
+            from the preceding in not having dark bands on the legs, while those
+            on the body are more irregular. It has a long tail, covered with long
+            white flowing hair. Zebra caterpillar, the larva of an American
+            noctuid moth (Mamestra picta). It is light yellow, with a broad black
+            stripe on the back and one on each side; the lateral stripes are
+            crossed with withe lines. It feeds on cabbages, beets, clover, and
+            other cultivated plants.
+             — Zebra opossum, the zebra wolf. See under Wolf.
+             — Zebra parrakeet, an Australian grass parrakeet, often kept as a
+            cage bird. Its upper parts are mostly pale greenish yellow,
+            transversely barred with brownish black crescents; the under parts,
+            rump, and upper tail coverts, are bright green; two central tail
+            feathers and the cheek patches are blue. Called also canary parrot,
+            scallop parrot, shell parrot, and undulated parrot.
+             — Zebra poison (Bot.), a poisonous tree (Euphorbia arborea) of the
+            Spurge family, found in South Africa. Its milky juice is so poisonous
+            that zebras have been killed by drinking water in which its branches
+            had been placed, and it is also used as an arrow poison. J. Smith
+            (Dict. Econ. Plants).
+             — Zebra shark. Same as Tiger shark, under Tiger.
+             — Zebra spider, a hunting spider.
+             — Zebra swallowtail, a very large North American swallow-tailed
+            butterfly (Iphiclides ajax), in which the wings are yellow, barred
+            with black; — called also ajax.
+             — Zebra wolf. See under Wolf.</p>
+            <p>ZEBRAWOOD
+            Ze"bra*wood`, n.
+            (a) A kind of cabinet wood having beautiful black, brown, and whitish
+            stripes, the timber of a tropical American tree (Connarus
+            Guianensis).
+            (b) The wood of a small West Indian myrtaceous tree (Eugenia
+            fragrans).
+            (c) The wood of an East Indian tree of the genus Guettarda.</p>
+            <p>ZEBRINE<br>
+            Ze"brine, a. (Zoöl.)
+            </p>
+            <p>Defn: Pertaining to, or resembling, the zebra.</p>
+            <p>ZEBRINNY<br>
+            Ze*brin"ny, n.; pl. -nies.
+            </p>
+            <p>Defn: A cross between a male horse and a female zebra.</p>
+            <p>ZEBRULA; ZEBRULE<br>
+            Ze"bru*la, Ze"brule, n.
+            </p>
+            <p>Defn: A cross between a male zebra and a female horse.</p>
+            <p>ZEBU<br>
+            Ze"bu, n. [zébu; of uncertain origin.] (Zoöl.)
+            </p>
+            <p>Defn: A bovine mammal (Ros Indicus) extensively domesticated in
+            India, China, the East Indies, and East Africa. It usually has short
+            horns, large pendulous ears, slender legs, a large dewlap, and a
+            large, prominent hump over the shoulders; but these characters vary
+            in different domestic breeds, which range in size from that of the
+            common ox to that of a large mastiff.</p>
+            <p>Note: Some of the varieties are used as beasts of burden, and some
+            fore for riding, while others are raised for their milk and flesh.
+            The Brahmin bull, regarded as sacred by the Hindoos, also belongs to
+            this species. The male is called also Indian bull, Indian ox, Madras
+            ox, and sacred bull.</p>
+            <p>ZEBUB<br>
+            Ze"bub, n. (Zoöl.)
+            </p>
+            <p>Defn: A large noxious fly of Abyssinia, which like the tsetse fly, is
+            destructive to cattle.</p>
+            <p>ZECHIN<br>
+            Ze"chin, n.
+            </p>
+            <p>Defn: See Sequin.</p>
+            <p>ZECHSTEIN<br>
+            Zech"stein`, n. Etym: [Gr., fr. zeche a mine + stein a stone.]<br>
+            (Geol.)
+            </p>
+            <p>Defn: The upper division of the Permian (Dyas) of Europe. The
+            prevailing rock is a magnesian limestone.</p>
+            <p>ZED<br>
+            Zed, n. Etym: [F., probably through It. zeta, fr. L. zeta. See Zeta.]
+            </p>
+            <p>Defn: The letter Z; — called also zee, and formerly izzard. "Zed,
+            thou unnecessary letter!" Shak.</p>
+            <p>ZEDOARY
+            Zed"o*a*ry, n. Etym: [F. zédoaire, LL. zedoaria; cf. It. zedoaria,
+            zettovario, Pg. zedoaria, Sp. zedoaria, cedoaria; all fr. Ar. &amp; Per.
+            zedw.] (Med.)</p>
+            <p>Defn: A medicinal substance obtained in the East Indian, having a
+            fragrant smell, and a warm, bitter, aromatic taste. It is used in
+            medicine as a stimulant.</p>
+            <p>Note: It is the rhizome of different species of Curcuma, esp. C.
+            zedoaria, and comes in short, firm pieces, externally of a wrinkled
+            gray, ash-colored appearance, but within of a brownish red color.
+            There are two kinds, round zedoary, and long zedoary.</p>
+            <p>ZEEKOE<br>
+            Zee"koe, n. Etym: [D., sea cow, lake cow.] (Zoöl.)
+            </p>
+            <p>Defn: A hippopotamus.</p>
+            <p>ZEEMAN EFFECT<br>
+            Zee"man ef*fect". (Physics)
+            </p>
+            <p>Defn: The widening and duplication, triplication, etc., of spectral
+            lines when the radiations emanate in a strong magnetic field, first
+            observed in 1896 by P. Zeeman, a Dutch physicist, and regarded as an
+            important confirmation of the electromagnetic theory of light.</p>
+            <p>ZEHNER<br>
+            Zeh"ner, n. Etym: [G.]
+            </p>
+            <p>Defn: An Austrian silver coin equal to ten kreutzers, or about five
+            cents.</p>
+            <p>ZEIN<br>
+            Ze"in, n. Etym: [Cf. F. zé\'8bne. See Zea.] (Chem.)
+            </p>
+            <p>Defn: A nitrogenous substance of the nature of gluten, obtained from
+            the seeds of Indian corn (Zea) as a soft, yellowish, amorphous
+            substance. [Formerly written zeine.]</p>
+            <p>ZEITGEIST
+            Zeit"geist`, n. [G.; zeit time + geist spirit. See Tide, n.; Ghost,
+            n.]</p>
+            <p>Defn: The spirit of the time; the general intellectual and moral
+            state or temper characteristic of any period of time.</p>
+            <p>ZEMINDAR<br>
+            Zem`in*dar", n.
+            </p>
+            <p>Defn: Same as Zamindar.</p>
+            <p>ZEMINDARY; ZEMINDARI<br>
+            Zem"in*da*ry, Zem"in*da*ri, n.
+            </p>
+            <p>Defn: Same as Zamindary.</p>
+            <p>ZEMNI<br>
+            Zem"ni, n. (Zoöl.)
+            </p>
+            <p>Defn: The blind mole rat (Spalax typhlus), native of Eastern Europe
+            and Asia. Its eyes and ears are rudimentary, and its fur is soft and
+            brownish, more or less tinged with gray. It constructs extensive
+            burrows.</p>
+            <p>ZEMSTVO<br>
+            Zem"stvo, n. [Russ., fr. zemlya land.]
+            </p>
+            <p>Defn: In Russia, an elective local district and provincial
+            administrative assembly. Originally it was composed of
+            representatives elected by the peasantry, the householders of the
+            towns, and the landed proprietors. In the reign of Alexander III. the
+            power of the noble landowners was increased, the peasants allowed
+            only to elect candidates from whom the governor of the province
+            nominated the deputy, and all acts of the zemstvo subjected to the
+            approval of the governor. Theoretically the zemstvo has large powers
+            relating to taxation, education, public health, etc., but practically
+            these powers are in most cases limited to the adjustment of the state
+            taxation.</p>
+            <p>ZENANA
+            Ze*na"na, n. Etym: [Hind. zenana, zanana, fr. Per. zanana, fr. zan
+            woman; akin to E. queen.]</p>
+            <p>Defn: The part of a dwelling appropriated to women. [India]</p>
+            <p>ZEND<br>
+            Zend, n. Etym: [See Zend-Avesta.]
+            </p>
+            <p>Defn: Properly, the translation and exposition in the Huzvâresh, or
+            literary Pehlevi, language, of the Avesta, the Zoroastrian sacred
+            writings; as commonly used, the language (an ancient Persian dialect)
+            in which the Avesta is written.</p>
+            <p>ZEND-AVESTA
+            Zend`-A*ves"ta, n. Etym: [Properly, the Avesta, or sacred text, and
+            its zend, or interpretation, in a more modern and intelligible
+            language. W. D. Whitney.]</p>
+            <p>Defn: The sacred writings of the ancient Persian religion, attributed
+            to Zoroaster, but chiefly of a later date.</p>
+            <p>ZENDIK<br>
+            Zen"dik, n. Etym: [Ar. zandik.]
+            </p>
+            <p>Defn: An atheist or unbeliever; — name given in the East to those
+            charged with disbelief of any revealed religion, or accused of
+            magical heresies.</p>
+            <p>ZENICK<br>
+            Ze"nick, n. (Zoöl.)
+            </p>
+            <p>Defn: A South African burrowing mammal (Suricata tetradactyla),
+            allied to the civets. It is grayish brown, with yellowish transverse
+            stripes on the back. Called also suricat.</p>
+            <p>ZENIK<br>
+            Ze"nik, n. (Zoöl.)
+            </p>
+            <p>Defn: See Zenick.</p>
+            <p>ZENITH
+            Ze"nith, n. Etym: [OE. senyth, OF. cenith, F. zénith, Sp. zenit,
+            cenit, abbrev. fr. Ar. samt-urras way of the head, vertical place;
+            samt way, path + al the + ras head. Cf. Azimuth.]</p>
+            <p>1. That point in the visible celestial hemisphere which is vertical
+            to the spectator; the point of the heavens directly overhead; —
+            opposed to nadir.
+            From morn To noon he fell, from noon to dewy eve, A summer's day; and
+            with the setting sun Dropped from the zenith, like a falling star.
+            Milton.</p>
+            <p>2. hence, figuratively, the point of culmination; the greatest
+            height; the height of success or prosperity.
+            I find my zenith doth depend upon A most auspicious star. Shak.
+            This dead of midnight is the noon of thought, And wisdom mounts her
+            zenith with the stars. Mrs. Barbauld.
+            It was during those civil troubles . . . this aspiring family reached
+            the zenith. Macaulay.
+            Zenith distance. (Astron.) See under Distance.
+             — Zenith sector. (Astron.) See Sector, 3.
+             — Zenith telescope (Geodesy), a telescope specially designed for
+            determining the latitude by means of any two stars which pass the
+            meridian about the same time, and at nearly equal distances from the
+            zenith, but on opposite sides of it. It turns both on a vertical and
+            a horizontal axis, is provided with a graduated vertical semicircle,
+            and a level for setting it to a given zenith distance, and with a
+            micrometer for measuring the difference of the zenith distances of
+            the two stars.</p>
+            <p>ZENITHAL<br>
+            Ze"nith*al, a.
+            </p>
+            <p>Defn: Of or pertaining to the zenith. "The deep zenithal blue."<br>
+            Tyndall.
+            </p>
+            <p>ZEOLITE<br>
+            Ze"o*lite, n. Etym: [Gr. -lite: cf. F. zéolithe.] (Min.)
+            </p>
+            <p>Defn: A term now used to designate any one of a family of minerals,
+            hydrous silicates of alumina, with lime, soda, potash, or rarely
+            baryta. Here are included natrolite, stilbite, analcime, chabazite,
+            thomsonite, heulandite, and others. These species occur of secondary
+            origin in the cavities of amygdaloid, basalt, and lava, also, less
+            frequently, in granite and gneiss. So called because many of these
+            species intumesce before the blowpipe. Needle zeolite, needlestone;
+            natrolite.</p>
+            <p>ZEOLITIC<br>
+            Ze`o*lit"ic, a.
+            </p>
+            <p>Defn: Of or pertaining to a zeolite; consisting of, or resembling, a
+            zeolite.</p>
+            <p>ZEOLITIFORM<br>
+            Ze`o*lit"i*form, a.
+            </p>
+            <p>Defn: Having the form of a zeolite.</p>
+            <p>ZEPHYR<br>
+            Zeph"yr, n. Etym: [L. zephyrus, Gr. zéphyr.]
+            </p>
+            <p>Defn: The west wind; poetically, any soft, gentle breeze. "Soft the<br>
+            zephyr blows." Gray.<br>
+            As gentle As zephyrs blowing below the violet. Shak.<br>
+            Zephyr cloth, a thin kind of cassimere made in Belgium; also, a<br>
+            waterproof fabric of wool.<br>
+             — Zephyr shawl, a kind of thin, light, embroidered shawl made of<br>
+            worsted and cotton.<br>
+             — Zephyr yarn, or worsted, a fine, soft kind of yarn or worsted, —<br>
+            used for knitting and embroidery.
+            </p>
+            <p>ZEPHYRUS<br>
+            Zeph"y*rus, n. Etym: [L. See Zephyr.]
+            </p>
+            <p>Defn: The west wind, or zephyr; — usually personified, and made the
+            most mild and gentle of all the sylvan deities.
+            Mild as when Zephyrus on Flora breathes. Milton.</p>
+            <p>ZEPPELIN<br>
+            Zep`pe*lin" (tsep`pe*le"; Angl. zep"pe*lin), n.
+            </p>
+            <p>Defn: A dirigible balloon of the rigid type, consisting of a
+            cylindrical trussed and covered frame supported by internal gas
+            cells, and provided with means of propulsion and  control. It was
+            first successfully used by Ferdinand Count von Zeppelin.</p>
+            <p>ZEQUIN<br>
+            Ze"quin, n.
+            </p>
+            <p>Defn: See Sequin.</p>
+            <p>ZERDA<br>
+            Zer"da, n. Etym: [Of African origin.] (Zoöl.)
+            </p>
+            <p>Defn: The fennec.</p>
+            <p>ZERIBA<br>
+            Ze*ri"ba, n. (Mil.)
+            </p>
+            <p>Defn: Same as Zareba.</p>
+            <p>ZERO
+            Ze"ro, n; pl. Zeros or Zeroes. Etym: [F. zéro, from Ar. çafrun,
+            çifrun, empty, a cipher. Cf. Cipher.]</p>
+            <p>1. (Arith.)</p>
+            <p>Defn: A cipher; nothing; naught.</p>
+            <p>2. The point from which the graduation of a scale, as of a
+            thermometer, commences.</p>
+            <p>Note: Zero in the Centigrade, or Celsius thermometer, and in the
+            Réaumur thermometer, is at the point at which water congeals. The
+            zero of the Fahrenheit thermometer is fixed at the point at which the
+            mercury stands when immersed in a mixture of snow and common salt. In
+            Wedgwood's pyrometer, the zero corresponds with 1077° on the
+            Fahrenheit scale. See Illust. of Thermometer.</p>
+            <p>3. Fig.: The lowest point; the point of exhaustion; as, his patience
+            had nearly reached zero. Absolute zero. See under Absolute.
+             — Zero method (Physics), a method of comparing, or measuring,
+            forces, electric currents, etc., by so opposing them that the pointer
+            of an indicating apparatus, or the needle of a galvanometer, remains
+            at, or is brought to, zero, as contrasted with methods in which the
+            deflection is observed directly; — called also null method.
+             — Zero point, the point indicating zero, or the commencement of a
+            scale or reckoning.</p>
+            <p>ZEST
+            Zest, n. Etym: [F. zeste, probably fr. L. schistos split, cleft,
+            divided, Gr. Schism.]</p>
+            <p>1. A piece of orange or lemon peel, or the aromatic oil which may be
+            squeezed from such peel, used to give flavor to liquor, etc.</p>
+            <p>2. Hence, something that gives or enhances a pleasant taste, or the
+            taste itself; an appetizer; also, keen enjoyment; relish; gusto.
+            Almighty Vanity! to thee they owe Their zest of pleasure, and their
+            balm of woe. Young.
+            Liberality of disposition and conduct gives the highest zest and
+            relish to social intercourse. Gogan.</p>
+            <p>3. The woody, thick skin inclosing the kernel of a walnut. [Obs.]</p>
+            <p>ZEST<br>
+            Zest, v. t. [imp. &amp; p. p. Zested; p. pr. &amp; vb. n. Zesting.]
+            </p>
+            <p>1. To cut into thin slips, as the peel of an orange, lemon, etc.; to
+            squeeze, as peel, over the surface of anything.</p>
+            <p>2. To give a relish or flavor to; to heighten the taste or relish of;
+            as, to zest wine. Gibber.</p>
+            <p>ZETA<br>
+            Ze"ta, n. Etym: [L., from Gr. Zed.]
+            </p>
+            <p>Defn: A Greek letter [z] corresponding to our z.</p>
+            <p>ZETETIC<br>
+            Ze*tet"ic, a. Etym: [Gr. zététique.]
+            </p>
+            <p>Defn: Seeking; proceeding by inquiry. Zetetic method (Math.), the
+            method used for finding the value of unknown quantities by direct
+            search, in investigation, or in the solution of problems. [R.]
+            Hutton.</p>
+            <p>ZETETIC<br>
+            Ze*tet"ic, n.
+            </p>
+            <p>Defn: A seeker; — a name adopted by some of the Pyrrhonists.</p>
+            <p>ZETETICS<br>
+            Ze*tet"ics, n. Etym: [See Zetetic, a.] (Math.)
+            </p>
+            <p>Defn: A branch of algebra which relates to the direct search for
+            unknown quantities. [R.]</p>
+            <p>ZEUGLODON<br>
+            Zeu"glo*don, n. Etym: [Gr. (Paleon.)
+            </p>
+            <p>Defn: A genus of extinct Eocene whales, remains of which have been
+            found in the Gulf States. The species had very long and slender
+            bodies and broad serrated teeth. See Phocodontia.</p>
+            <p>ZEUGLODONT<br>
+            Zeu"glo*dont, (Zoöl.)
+            </p>
+            <p>Defn: Any species of Zeuglodonta.</p>
+            <p>ZEUGLODONTA<br>
+            Zeu`glo*don"ta, n. pl. Etym: [NL.] (Zoöl.)
+            </p>
+            <p>Defn: Same as Phocodontia.</p>
+            <p>ZEUGMA<br>
+            Zeug"ma, n. Etym: [L., from Gr. Yoke.] (Gram.)
+            </p>
+            <p>Defn: A figure by which an adjective or verb, which agrees with a
+            nearer word, is, by way of supplement, referred also to another more
+            remote; as, "hic illius arma, hic currus fuit;" where fuit, which
+            agrees directly with currus, is referred also to arma.</p>
+            <p>ZEUGMATIC<br>
+            Zeug*mat"ic, a.
+            </p>
+            <p>Defn: Of or pertaining to zeugma; characterized by zeugma.</p>
+            <p>ZEUGOBRANCHIATA<br>
+            Zeu`go*bran`chi*a"ta, n. pl. Etym: [NL., fr. Gr. (Zoöl.)
+            </p>
+            <p>Defn: Same as Zygobranchia.</p>
+            <p>ZEUS<br>
+            Zeus, n. (Gr. Myth.)
+            </p>
+            <p>Defn: The chief deity of the Greeks, and ruler of the upper world
+            (cf. Hades). He was identified with Jupiter.</p>
+            <p>ZEUZERIAN<br>
+            Zeu*ze"ri*an, n. (Zoöl.)
+            </p>
+            <p>Defn: Any one of a group of bombycid moths of which the genus Zeuzera
+            is the type. Some of these moths are of large size. The goat moth is
+            an example.</p>
+            <p>ZEYLANITE<br>
+            Zey"lan*ite, n. (Min.)
+            </p>
+            <p>Defn: See Ceylanite.</p>
+            <p>ZIBET; ZIBETH<br>
+            Zib"et, Zib"eth, n. Etym: [Cf. It. zibetto. See Civet.] (Zoöl.)
+            </p>
+            <p>Defn: A carnivorous mammal (Viverra zibetha) closely allied to the
+            civet, from which it differs in having the spots on the body less
+            distinct, the throat whiter, and the black rings on the tail more
+            numerous.</p>
+            <p>Note: It inhabits India, Southern China, and the East Indies. It
+            yields a perfume similar to that of the civet. It is often
+            domesticated by the natives, and then serves the same purposes as the
+            domestic cat. Called also Asiatic, or Indian, civet.</p>
+            <p>ZIEGA<br>
+            Zie"ga, n.
+            </p>
+            <p>Defn: Curd produced from milk by adding acetic acid, after rennet has
+            ceased to cause coagulation. Brande &amp; C.</p>
+            <p>ZIETRISIKITE<br>
+            Zie`tri*si"kite, n. (Min.)
+            </p>
+            <p>Defn: A mineral wax, vert similar to ozocerite. It is found at<br>
+            Zietrisika, Moldavia, whence its name.
+            </p>
+            <p>ZIF<br>
+            Zif, n. Etym: [Heb. ziv.]
+            </p>
+            <p>Defn: The second month of the Jewish ecclesiastical year,
+            corresponding to our May.</p>
+            <p>ZIGGER; ZIGHYR<br>
+            Zig"ger, Zig"hyr, v. i. (Mining)
+            </p>
+            <p>Defn: Same as Sicker. [Prov. Eng.] Raymond.</p>
+            <p>ZIGZAG
+            Zig"zag`, n. Etym: [F. zigzag, G. zickzack, from zacke, zacken, a
+            dentil, tooth. Cf. Tack a small nail.]</p>
+            <p>1. Something that has short turns or angles.
+            The fanatics going straight forward and openly, the politicians by
+            the surer mode of zigzag. Burke.</p>
+            <p>2. (Arch.)</p>
+            <p>Defn: A molding running in a zigzag line; a chevron, or series of
+            chevrons. See Illust. of Chevron, 3.</p>
+            <p>3. (Fort.)</p>
+            <p>Defn: See Boyau.</p>
+            <p>ZIGZAG<br>
+            Zig"zag`, a.
+            </p>
+            <p>Defn: Having short, sharp turns; running this way and that in an
+            onward course.</p>
+            <p>ZIGZAG<br>
+            Zig"zag`, v. t. [imp. &amp; p. p. Zigzagged; p. pr. &amp; vb. n. Zigzagging.]
+            </p>
+            <p>Defn: To form with short turns.</p>
+            <p>ZIGZAG<br>
+            Zig"zag`, v. i.
+            </p>
+            <p>Defn: To move in a zigzag manner; also, to have a zigzag shape. R.<br>
+            Browning.
+            </p>
+            <p>ZIGZAGGERY<br>
+            Zig"zag`ger*y, n.
+            </p>
+            <p>Defn: The quality or state of being zigzag; crookedness. [R.]<br>
+            The . . . zigzaggery of my father's approaches. Sterne.
+            </p>
+            <p>ZIGZAGGY<br>
+            Zig"zag`gy, a.
+            </p>
+            <p>Defn: Having sharp turns. Barham.</p>
+            <p>ZIKKURAT<br>
+            Zik"ku*rat, n.
+            </p>
+            <p>Defn: A temple tower of the Babylonians or Assyrians, consisting of a
+            lofty pyramidal structure, built in successive stages, with outside
+            staircases, and a shrine at the top.</p>
+            <p>ZILLA<br>
+            Zil"la, n. (Bot.)
+            </p>
+            <p>Defn: A low, thorny, suffrutescent, crucifeous plant (Zilla
+            myagroides) found in the deserts of Egypt. Its leaves are boiled in
+            water, and eaten, by the Arabs.</p>
+            <p>ZILLAH<br>
+            Zil"lah, n. Etym: [Ar. zila.]
+            </p>
+            <p>Defn: A district or local division, as of a province. [India]</p>
+            <p>ZIMB<br>
+            Zimb, n. (Zoöl.)
+            </p>
+            <p>Defn: A large, venomous, two-winged fly, native of Abyssinia. It is
+            allied to the tsetse fly, and, like the latter, is destructive to
+            cattle.</p>
+            <p>ZIMENT-WATER<br>
+            Zim"ent-wa`ter, n. Etym: [G. cement-wasser. See Cement.]
+            </p>
+            <p>Defn: A kind of water found in copper mines; water impregnated with
+            copper.</p>
+            <p>ZIMOCCA<br>
+            Zi*moc"ca, n.
+            </p>
+            <p>Defn: A sponge (Euspongia zimocca) of flat form and fine quality,
+            from the Adriatic, about the Greek islands, and the coast of Barbary.</p>
+            <p>ZINC
+            Zinc, n. Etym: [G. zinc, probably akin to zinn tin: cf. F. zinc, from
+            the German. Cf. Tin.] (Chem.)</p>
+            <p>Defn: An abundant element of the magnesium-cadmium group, extracted
+            principally from the minerals zinc blende, smithsonite, calamine, and
+            franklinite, as an easily fusible bluish white metal, which is
+            malleable, especially when heated. It is not easily oxidized in moist
+            air, and hence is used for sheeting, coating galvanized iron, etc. It
+            is used in making brass, britannia, and other alloys, and is also
+            largely consumed in electric batteries. Symbol Zn. Atomic weight 64.9
+            [Formerly written also zink.] Butter of zinc (Old Chem.), zinc
+            chloride, ZnCl2, a deliquescent white waxy or oily substance.
+             — Oxide of zinc. (Chem.) See Zinc oxide, below.
+             — Zinc amine (Chem.), a white amorphous substance, Zn(NH2)2,
+            obtained by the action of ammonia on zinc ethyl; — called also zinc
+            amide.
+             — Zinc amyle (Chem.), a colorless, transparent liquid, composed of
+            zinc and amyle, which, when exposed to the atmosphere, emits fumes,
+            and absorbs oxygen with rapidity.
+             — Zinc blende Etym: [cf. G. zinkblende] (Min.), a native zinc
+            sulphide. See Blende, n. (a) — Zinc bloom Etym: [cf. G. zinkblumen
+            flowers of zinc, oxide of zinc] (Min.), hydrous carbonate of zinc,
+            usually occurring in white earthy incrustations; — called also
+            hydrozincite.
+             — Zinc ethyl (Chem.), a colorless, transparent, poisonous liquid,
+            composed of zinc and ethyl, which takes fire spontaneously on
+            exposure to the atmosphere.
+             — Zinc green, a green pigment consisting of zinc and cobalt oxides;
+            — called also Rinmann's green.
+             — Zinc methyl (Chem.), a colorless mobile liquid Zn(CH3)2, produced
+            by the action of methyl iodide on a zinc sodium alloy. It has a
+            disagreeable odor, and is spontaneously inflammable in the air. It
+            has been of great importance in the synthesis of organic compounds,
+            and is the type of a large series of similar compounds, as zinc
+            ethyl, zinc amyle, etc.
+             — Zinc oxide (Chem.), the oxide of zinc, ZnO, forming a light
+            fluffy sublimate when zinc is burned; — called also flowers of zinc,
+            philosopher's wool, nihil album, etc. The impure oxide produced by
+            burning the metal, roasting its ores, or in melting brass, is called
+            also pompholyx, and tutty.
+             — Zinc spinel (Min.), a mineral, related to spinel, consisting
+            essentially of the oxides of zinc and aluminium; gahnite.
+             — Zinc vitriol (Chem.), zinc sulphate. See White vitriol, under
+            Vitriol.
+             — Zinc white, a white powder consisting of zinc oxide, used as a
+            pigment.</p>
+            <p>ZINC<br>
+            Zinc, v. t. [imp. &amp; p. p. Zincked or Zinced (; p. pr. &amp; vb. n.<br>
+            Zincking or Zincing (.]
+            </p>
+            <p>Defn: To coat with zinc; to galvanize.</p>
+            <p>ZINCANE<br>
+            Zinc"ane, n. (Chem.)
+            </p>
+            <p>Defn: Zinc chloride. [Obs.]</p>
+            <p>ZINCIC<br>
+            Zinc"ic, a. (Chem.)
+            </p>
+            <p>Defn: Pertaining to, containing, or resembling, zinc; zincous.</p>
+            <p>ZINCIDE<br>
+            Zinc"ide, n.
+            </p>
+            <p>Defn: A binary compound of zinc. [R.]</p>
+            <p>ZINCIFEROUS<br>
+            Zinc*if"er*ous, a. Etym: [Zinc + -ferous.]
+            </p>
+            <p>Defn: Containing or affording zinc.</p>
+            <p>ZINCIFICATION<br>
+            Zinc`i*fi*ca"tion, n.
+            </p>
+            <p>Defn: The act or process of applying zinc; the condition of being
+            zincified, or covered with zinc; galvanization.</p>
+            <p>ZINCIFY<br>
+            Zinc"i*fy, v. t. Etym: [Zinc + -fy.] (Metal.)
+            </p>
+            <p>Defn: To coat or impregnate with zinc.</p>
+            <p>ZINCITE<br>
+            Zinc"ite, n. (Min.)
+            </p>
+            <p>Defn: Native zinc oxide; a brittle, translucent mineral, of an
+            orange-red color; — called also red zinc ore, and red oxide of zinc.</p>
+            <p>ZINCKING; ZINCING<br>
+            Zinck"ing, or Zinc"ing, n. (Metal.)
+            </p>
+            <p>Defn: The act or process of applying zinc; galvanization.</p>
+            <p>ZINCKY<br>
+            Zinck"y
+            </p>
+            <p>Defn: , Pertaining to zinc, or having its appearance. [Written also
+            zinky.]</p>
+            <p>ZINCO-<br>
+            Zin"co-.
+            </p>
+            <p>Defn: A combining form from zinc; in chemistry, designating zinc as
+            an element of certain double compounds. Also used adjectively.</p>
+            <p>ZINCODE<br>
+            Zinc"ode, n. Etym: [Zinc + -ode, as in electrode.] (Elec.)
+            </p>
+            <p>Defn: The positive electrode of an electrolytic cell; anode. [R.]<br>
+            Miller.
+            </p>
+            <p>ZINCOGRAPH<br>
+            Zin"co*graph, n.
+            </p>
+            <p>Defn: A zinc plate prepared for printing by zincography; also, a
+            print from such a plate.</p>
+            <p>ZINCOGRAPHER<br>
+            Zin*cog"ra*pher, n.
+            </p>
+            <p>Defn: Am engraver on zinc.</p>
+            <p>ZINCOGRAPHIC; ZINCOGRAPHICAL<br>
+            Zin`co*graph"ic, Zin`co*graph"ic*al, a.
+            </p>
+            <p>Defn: Of or pertaining to zincography; as, zincographic processes.</p>
+            <p>ZINCOGRAPHY<br>
+            Zin*cog"ra*phy, n. Etym: [Zinco- + -graphy.]
+            </p>
+            <p>Defn: The art or process of engraving or etching on zinc, in which
+            the design is left in relief in the style of a wood cut, the rest of
+            the ground being eaten away by acid.</p>
+            <p>ZINCOID<br>
+            Zinc"oid, a. Etym: [Zinc + -oid.]
+            </p>
+            <p>Defn: Pertaining to, or resembling, zinc; — said of the electricity
+            of the zincous plate in connection with a copper plate in a voltaic
+            circle; also, designating the positive pole. [Obs.]</p>
+            <p>ZINCO-POLAR<br>
+            Zin`co-po"lar, a. Etym: [Zinco- + polar.] (Elec.)
+            </p>
+            <p>Defn: Electrically polarized like the surface of the zinc presented
+            to the acid in a battery, which has zincous affinity. [Obs.]</p>
+            <p>ZINCOUS<br>
+            Zinc"ous, a.
+            </p>
+            <p>1. (Chem.)
+            (a) Of, pertaining to, or containing, zinc; zincic; as, zincous
+            salts.
+            (b) Hence, formerly, basic, basylous, as opposed to chlorous.</p>
+            <p>2. (Physics)</p>
+            <p>Defn: Of or pertaining to the positive pole of a galvanic battery;
+            electro-positive.</p>
+            <p>ZINGARO<br>
+            Zin"ga*ro, n.; pl. Zingari. Etym: [It.]
+            </p>
+            <p>Defn: A gypsy.</p>
+            <p>ZINGEL<br>
+            Zing"el, n. (Zoöl.)
+            </p>
+            <p>Defn: A small, edible, freshwater European perch (Aspro zingel),
+            having a round, elongated body and prominent snout.</p>
+            <p>ZINGIBERACEOUS<br>
+            Zin`gi*ber*a"ceous, a. Etym: [L. zingiber ginger. See Ginger.] (Bot.)
+            </p>
+            <p>Defn: Of or pertaining to ginger, or to a tribe (Zingibereæ) of
+            endogenous plants of the order Scitamineæ. See Scitamineous.</p>
+            <p>ZINK<br>
+            Zink, n. (Chem.)
+            </p>
+            <p>Defn: See Zinc. [Obs.]</p>
+            <p>ZINKENITE<br>
+            Zink"en*ite, n. Etym: [From Zinken, director at one time of the<br>
+            Hanoverian mines.] (Min.)
+            </p>
+            <p>Defn: A steel-gray metallic mineral, a sulphide of antimony and lead.</p>
+            <p>ZINKY<br>
+            Zink"y, a.
+            </p>
+            <p>Defn: See Zincky. Kirwan.</p>
+            <p>ZINNIA<br>
+            Zin"ni*a, n. Etym: [NL. So called after Professor Zinn, of<br>
+            Göttingen.] (Bot.)
+            </p>
+            <p>Defn: Any plant of the composite genus Zinnia, Mexican herbs with
+            opposite leaves and large gay-colored blossoms. Zinnia elegans is the
+            commonest species in cultivation.</p>
+            <p>ZINNWALDITE
+            Zinn"wald*ite, n. Etym: [So called after Zinnwald, in Bohemia, where
+            it occurs.] (Min.)</p>
+            <p>Defn: A kind of mica containing lithium, often associated with tin
+            ore.</p>
+            <p>ZINSANG<br>
+            Zin"sang, n. (Zoöl.)
+            </p>
+            <p>Defn: The delundung.</p>
+            <p>ZINZIBERACEOUS<br>
+            Zin`zi*ber*a"ceous, a. (Bot.)
+            </p>
+            <p>Defn: Same as Zingiberaceous.</p>
+            <p>ZION<br>
+            Zi"on, n. Etym: [Heb. tsiy, originally, a hill.]
+            </p>
+            <p>1. (Jewish Antiq.)</p>
+            <p>Defn: A hill in Jerusalem, which, after the capture of that city by
+            the Israelites, became the royal residence of David and his
+            successors.</p>
+            <p>2. Hence, the theocracy, or church of God.</p>
+            <p>3. The heavenly Jerusalem; heaven.</p>
+            <p>ZIONISM<br>
+            Zi"on*ism, n.  [Zion + -ism.]
+            </p>
+            <p>Defn: Among the Jews, a theory, plan, or movement for colonizing
+            their own race in Palestine, the land of Zion, or, if that is
+            impracticable, elsewhere, either for religious or nationalizing
+            purposes; — called also Zion movement. —Zi"on*ist, n. —
+            Zi`on*is"tic (#), a.</p>
+            <p>ZIP<br>
+            Zip, n. [Imitative.]
+            </p>
+            <p>Defn: A hissing or sibilant sound such as that made by a flying
+            bullet.</p>
+            <p>ZIP<br>
+            Zip, v. i.
+            </p>
+            <p>Defn: To make, or move with, such a sound.</p>
+            <p>ZIPHIOID<br>
+            Ziph"i*oid, n. (Zoöl.)
+            </p>
+            <p>Defn: See Xiphioid.</p>
+            <p>ZIRCO-<br>
+            Zir"co-. (Chem.)
+            </p>
+            <p>Defn: A combining form (also used adjectively) designating zirconium
+            as an element of certain double compounds; zircono-; as in
+            zircofluoric acid, sodium zircofluoride.</p>
+            <p>ZIRCOFLUORIDE<br>
+            Zir`co*flu"or*ide, n. (Chem.)
+            </p>
+            <p>Defn: A double fluoride of zirconium and hydrogen, or some other
+            positive element or radical; as, zircofluoride of sodium.</p>
+            <p>ZIRCON
+            Zir"con, n. Etym: [F., the same word as jargon. See Jargon a variety
+            of zircon.] (Min.)</p>
+            <p>Defn: A mineral occurring in tetragonal crystals, usually of a brown
+            or gray color. It consists of silica and zirconia. A red variety,
+            used as a gem, is called hyacinth. Colorless, pale-yellow or smoky-
+            brown varieties from Ceylon are called jargon. Zircon syenite, a
+            coarse-grained syenite containing zircon crystals and often also
+            elæolite. It is largely developed in Southern Norway.</p>
+            <p>ZIRCONA<br>
+            Zir"co*na, n. Etym: [NL.] (Chem.)
+            </p>
+            <p>Defn: Zirconia.</p>
+            <p>ZIRCONATE<br>
+            Zir"con*ate, n. (Chem.)
+            </p>
+            <p>Defn: A salt of zirconic acid.</p>
+            <p>ZIRCONIA<br>
+            Zir*co"ni*a, n. Etym: [NL.] (Chem.)
+            </p>
+            <p>Defn: The oxide of zirconium, obtained as a white powder, and
+            possessing both acid and basic properties. On account of its
+            infusibility, and brilliant luminosity when incandescent, it is used
+            as an ingredient of sticks for the Drummomd light.</p>
+            <p>ZIRCONIC<br>
+            Zir*con"ic, a. (Chem.)
+            </p>
+            <p>Defn: Pertaining to, containing, or resembling, zirconium; as,
+            zirconic oxide; zirconic compounds. Zirconic acid, an acid of
+            zirconium analogous to carbonic and silicic acids, known only in its
+            salts.</p>
+            <p>ZIRCONIUM<br>
+            Zir*co"ni*um, n. Etym: [NL.] (Chem.)
+            </p>
+            <p>Defn: A rare element of the carbon-silicon group, intermediate
+            between the metals and nonmetals, obtained from the mineral zircon as
+            a dark sooty powder, or as a gray metallic crystalline substance.
+            Symbol Zr. Atomic weight, 90.4.</p>
+            <p>ZIRCON LIGHT<br>
+            Zir"con light. (Physics)
+            </p>
+            <p>Defn: A light, similar to the calcium light, produced by incandescent
+            zirconia.</p>
+            <p>ZIRCONO<br>
+            Zir"co*no.
+            </p>
+            <p>Defn: See Zirco-.</p>
+            <p>ZIRCONOID<br>
+            Zir"con*oid, n. Etym: [Zircon + oid.] (Crystallog.)
+            </p>
+            <p>Defn: A double eight-sided pyramid, a form common with tetragonal
+            crystals; — so called because this form often occurs in crystals of
+            zircon.</p>
+            <p>ZITHER<br>
+            Zith"er, n. Etym: [G. zither. See Cittern.] (Mus.)
+            </p>
+            <p>Defn: An instrument of music used in Austria and Germany. It has from
+            thirty to forty wires strung across a shallow sounding-board, which
+            lies horizontally on a table before the performer, who uses both
+            hands in playing on it.</p>
+            <p>Note: [Not to be confounded with the old lute-shaped cittern, or
+            cithern.]</p>
+            <p>ZITTERN<br>
+            Zit"tern, n. (Min.)
+            </p>
+            <p>Defn: See Cittern.</p>
+            <p>ZIZANIA<br>
+            Zi*za"ni*a, n. Etym: [NL., from L. zizanium darnel, cockle, Gr.<br>
+            (Bot.)
+            </p>
+            <p>Defn: A genus of grasses including Indian rice. See Indian rice,
+            under Rice.</p>
+            <p>ZIZEL<br>
+            Ziz"el, n. Etym: [G. ziesel.] (Zoöl.)
+            </p>
+            <p>Defn: The suslik. [Written also zisel.]</p>
+            <p>ZIZITH<br>
+            Zi"zith, n. pl. [Heb. tsitsith.]
+            </p>
+            <p>Defn: The tassels of twisted cords or threads on the corners of the
+            upper garment worn by strict Jews. The Hebrew for this word is
+            translated in both the Authorized and Revised Versions (Deut. xxii.
+            12) by the word "fringes."</p>
+            <p>ZOANTHACEA<br>
+            Zo`an*tha"ce*a, n. pl. Etym: [NL., from Gr. (Zoöl.)
+            </p>
+            <p>Defn: A suborder of Actinaria, including Zoanthus and allied genera,
+            which are permanently attached by their bases.</p>
+            <p>ZOANTHARIA<br>
+            Zo`an*tha"ri*a, n. pl. Etym: [NL.] (Zoöl.)
+            </p>
+            <p>Defn: Same as Anthozoa.</p>
+            <p>ZOANTHARIAN<br>
+            Zo`an*tha"ri*an, a. (Zoöl.)
+            </p>
+            <p>Defn: Of or pertaining to the Zoantharia.<br>
+             — n.
+            </p>
+            <p>Defn: One of the Anthozoa.</p>
+            <p>ZOANTHODEME<br>
+            Zo*an"tho*deme, n. Etym: [See Zoantharia, and Deme.] (Zoöl.)
+            </p>
+            <p>Defn: The zooids of a compound anthozoan, collectively.</p>
+            <p>ZOANTHOID<br>
+            Zo*an"thoid, a. Etym: [See Zoantharia, and -oid.] (Zoöl.)
+            </p>
+            <p>Defn: Of or pertaining to the Zoanthacea.</p>
+            <p>ZOANTHROPY<br>
+            Zo*an"thro*py, n. Etym: [Gr. (Med.)
+            </p>
+            <p>Defn: A kind of monomania in which the patient believes himself
+            transformed into one of the lower animals.</p>
+            <p>ZOANTHUS<br>
+            Zo*an"thus, n. Etym: [NL. See Zoantharia.] (Zoöl.)
+            </p>
+            <p>Defn: A genus of Actinaria, including numerous species, found mostly
+            in tropical seas. The zooids or polyps resemble small, elongated
+            actinias united together at their bases by fleshy stolons, and thus
+            forming extensive groups. The tentacles are small and bright colored.</p>
+            <p>ZOBO<br>
+            Zo"bo, n. Etym: [Native name.] (Zoöl.)
+            </p>
+            <p>Defn: A kind of domestic cattle reared in Asia for its flesh and
+            milk. It is supposed to be a hybrid between the zebu and the yak.</p>
+            <p>ZOCCO; ZOCCOLO<br>
+            Zoc"co, Zoc"co*lo, n. Etym: [It. fr. L. socculus. See Socle, and cf.<br>
+            Zacco.] (Arch.)
+            </p>
+            <p>Defn: Same as Socle.</p>
+            <p>ZOCLE<br>
+            Zo"cle, n. (Arch.)
+            </p>
+            <p>Defn: Same as Socle.</p>
+            <p>ZODIAC<br>
+            Zo"di*ac, n. Etym: [F. zodiaque (cf. It. zodiaco), fr. L. zodiacus,<br>
+            Gr.
+            </p>
+            <p>1. (Astron.)
+            (a) An imaginary belt in the heavens, 16º or 18º broad, in the middle
+            of which is the ecliptic, or sun's path. It comprises the twelve
+            constellations, which one constituted, and from which were named, the
+            twelve signs of the zodiac.
+            (b) A figure representing the signs, symbols, and constellations of
+            the zodiac.</p>
+            <p>2. A girdle; a belt. [Poetic &amp; R.]
+            By his side, As in a glistering zodiac, hung the sword. Milton.</p>
+            <p>ZODIACAL<br>
+            Zo*di"a*cal, a. Etym: [Cf. F. zodiacal.] (Astron.)
+            </p>
+            <p>Defn: Of or pertaining to the zodiac; situated within the zodiac; as,
+            the zodiacal planets. Zodiacal light, a luminous tract of the sky, of
+            an elongated, triangular figure, lying near the ecliptic, its base
+            being on the horizon, and its apex at varying altitudes. It is to be
+            seen only in the evening, after twilight, and in the morning before
+            dawn. It is supposed to be due to sunlight reflected from multitudes
+            of meteoroids revolving about the sun nearly in the plane of the
+            ecliptic.</p>
+            <p>ZOEA<br>
+            Zo"ë*a, n. Etym: [NL., fr. Gr. (Zoöl.)
+            </p>
+            <p>Defn: A peculiar larval stage of certain decapod Crustacea,
+            especially of crabs and certain Anomura. [Written also zoæa.]</p>
+            <p>Note: In this stage the anterior part of the body is relatively
+            large, and usually bears three or four long spines. The years are
+            conspicuous, and the antennæ and jaws are long, fringed organs used
+            in swimming. The thoracic legs are undeveloped or rudimentary, the
+            abdomen long, slender, and often without appendages. The zoëa, after
+            casting its shell, changes to a megalops.</p>
+            <p>ZOETROPE<br>
+            Zo"e*trope, n. Etym: [Gr.
+            </p>
+            <p>Defn: An optical toy, in which figures made to revolve on the inside
+            of a cylinder, and viewed through slits in its circumference, appear
+            like a single figure passing through a series of natural motions as
+            if animated or mechanically moved.</p>
+            <p>ZOHAR<br>
+            Zo"har, n. Etym: [Heb. z candor, splendor.]
+            </p>
+            <p>Defn: A Jewish cabalistic book attributed by tradition to Rabbi Simon
+            ben Yochi, who lived about the end of the 1st century, a. d. Modern
+            critics believe it to be a compilation of the 13th century. Encyc.
+            Brit.</p>
+            <p>ZOIC<br>
+            Zo"ic, a. Etym: [Gr. (Zoöl.)
+            </p>
+            <p>Defn: Of or pertaining to animals, or animal life.</p>
+            <p>ZOIDE<br>
+            Zo"ide, n. (Biol.)
+            </p>
+            <p>Defn: See Meride.</p>
+            <p>ZOILEAN<br>
+            Zo*il"e*an, a.
+            </p>
+            <p>Defn: Having the characteristic of Zoilus, a bitter, envious, unjust
+            critic, who lived about 270 years before Christ.</p>
+            <p>ZOILISM<br>
+            Zo"i*lism, n.
+            </p>
+            <p>Defn: Resemblance to Zoilus in style or manner; carping criticism;<br>
+            detraction.<br>
+            Bring candid eyes the perusal of men's works, and let not Zoilism or<br>
+            detraction blast well-intended labors. Sir T. Browne.
+            </p>
+            <p>ZOISITE
+            Zois"ite, n. Etym: [After its discoverer, Von Zois, an Austrian
+            mineralogist.] (Min.)</p>
+            <p>Defn: A grayish or whitish mineral occurring in orthorhombic,
+            prismatic crystals, also in columnar masses. It is a silicate of
+            alumina and lime, and is allied to epidote.</p>
+            <p>ZOISM<br>
+            Zo"ism, n. [Gr. zwh` life + -ism.]
+            </p>
+            <p>1. Reverence for animal life or belief in animal powers and
+            influences, as among savages.</p>
+            <p>2.  (Biol.) A doctrine, now discarded, that the phenomena of life are
+            due to a peculiar vital principle; the theory of vital force.</p>
+            <p>ZOKOR<br>
+            Zo"kor, n. (Zoöl.)
+            </p>
+            <p>Defn: An Asiatic burrowing rodent (Siphneus aspalax) resembling the
+            mole rat. It is native of the Altai Mountains.</p>
+            <p>ZOLAESQUE<br>
+            Zo`la*esque", a.
+            </p>
+            <p>Defn: In the style of Zola (see Zolaism).</p>
+            <p>ZOLAISM<br>
+            Zo"la*ism, n.
+            </p>
+            <p>Defn: The literary theories and practices of the French novelist<br>
+            Emile Zola (1840-1902); naturalism, esp. in a derogatory sense. —<br>
+            Zo"la*ist, n. — Zo`la*is"tic (#), a. — Zo"la*ize (#), v.
+            </p>
+            <p>ZOLLNER'S LINES
+            Zöll"ner's lines`. [So called after Friedrich Zöllner, a German
+            physicist.]</p>
+            <p>Defn: Parallel lines that are made to appear convergent or divergent
+            by means of oblique intersections.</p>
+            <p>ZOLLVEREIN<br>
+            Zoll"ve*rein`, n. Etym: [G., from zoll duty + verein union.]
+            </p>
+            <p>Defn: Literally, a customs union; specifically, applied to the
+            several customs unions successively formed under the leadership of
+            Prussia among certain German states for establishing liberty of
+            commerce among themselves and common tariff on imports, exports, and
+            transit.</p>
+            <p>Note: In 1834 a zollverein was established which included most of the
+            principal German states except Austria. This was terminated by the
+            events of 1866, and in 1867 a more closely organized union was
+            formed, the administration of which was ultimately merged in that of
+            the new German empire, with which it nearly corresponds
+            territorially.</p>
+            <p>ZOMBORUK<br>
+            Zom"bo*ruk, n. (Mil.)
+            </p>
+            <p>Defn: See Zumbooruk.</p>
+            <p>ZONA<br>
+            Zo"na, n.; pl. Zonæ. Etym: [L., a girdle. See Zone.]
+            </p>
+            <p>Defn: A zone or band; a layer. Zona pellucida. Etym: [NL.] (Biol.)
+            (a) The outer transparent layer, or envelope, of the ovum. It is a
+            more or less elastic membrane with radiating striæ, and corresponds
+            to the cell wall of an ordinary cell. See Ovum, and Illust. of
+            Microscope. (b) The zona radiata.
+             — Zona radiata Etym: [NL.] (Biol.), a radiately striated membrane
+            situated next the yolk of an ovum, or separated from it by a very
+            delicate membrane only.</p>
+            <p>ZONAL<br>
+            Zon"al, a. Etym: [L. zonalis.]
+            </p>
+            <p>Defn: Of or pertaining to a zone; having the form of a zone or zones.
+            Zonal equation (Crystallog.), the mathematical relation which belongs
+            to all the planes of a zone, and expresses their common position with
+            reference to the axes.
+             — Zonal structure (Crystallog.), a structure characterized by the
+            arrangements of color, inclusions, etc., of a crystal in parallel or
+            concentric layers, which usually follow the outline of the crystal,
+            and mark the changes that have taken place during its growth.
+             — Zonal symmetry. (Biol.) See the Note under Symmetry.</p>
+            <p>ZONAR<br>
+            Zo"nar, n. Etym: [Mod. Gr. Zone.]
+            </p>
+            <p>Defn: A belt or girdle which the Christians and Jews of the Levant
+            were obliged to wear to distinguish them from Mohammedans. [Written
+            also zonnar.]</p>
+            <p>ZONARIA<br>
+            Zo*na"ri*a, n. pl. Etym: [NL.] (Zoöl.)
+            </p>
+            <p>Defn: A division of Mammalia in which the placenta is zonelike.</p>
+            <p>ZONATE<br>
+            Zon"ate, a. (Bot.)
+            </p>
+            <p>Defn: Divided by parallel planes; as, zonate tetraspores, found in
+            certain red algæ.</p>
+            <p>ZONE<br>
+            Zone, n. Etym: [F. zone, L. zona, Gr. j to gird, Zend yah.]
+            </p>
+            <p>1. A girdle; a cincture. [Poetic]
+            An embroidered zone surrounds her waist. Dryden.
+            Loose were her tresses seen, her zone unbound. Collins.</p>
+            <p>2. (Geog.)</p>
+            <p>Defn: One of the five great divisions of the earth, with respect to
+            latitude and temperature.</p>
+            <p>Note: The zones are five: the torrid zone, extending from tropic to
+            tropic 46º 56min, or 23º 28min on each side of the equator; two
+            temperate or variable zones, situated between the tropics and the
+            polar circles; and two frigid zones, situated between the polar
+            circles and the poles.
+            Commerce . . . defies every wind, outrides every tempest, and
+            invades. Bancroft.</p>
+            <p>3. (Math.)</p>
+            <p>Defn: The portion of the surface of a sphere included between two
+            parallel planes; the portion of a surface of revolution included
+            between two planes perpendicular to the axis. Davies &amp; Peck (Math.
+            Dict.)</p>
+            <p>4. (Nat. Hist.)
+            (a) A band or stripe extending around a body.
+            (b) A band or area of growth encircling anything; as, a zone of
+            evergreens on a mountain; the zone of animal or vegetable life in the
+            ocean around an island or a continent; the Alpine zone, that part of
+            mountains which is above the limit of tree growth.</p>
+            <p>5. (Crystallog.)</p>
+            <p>Defn: A series of planes having mutually parallel intersections.</p>
+            <p>6. Circuit; circumference. [R.] Milton. Abyssal zone. (Phys. Geog.)
+            See under Abyssal.
+             — Zone axis (Crystallog.), a straight line passing through the
+            center of a crystal, to which all the planes of a given zone are
+            parallel.</p>
+            <p>ZONE<br>
+            Zone, v. t.
+            </p>
+            <p>Defn: To girdle; to encircle. [R.] Keats.</p>
+            <p>ZONED<br>
+            Zoned, a.
+            </p>
+            <p>1. Wearing a zone, or girdle. Pope.</p>
+            <p>2. Having zones, or concentric bands; striped.</p>
+            <p>3. (Bot.)</p>
+            <p>Defn: Zonate.</p>
+            <p>ZONELESS<br>
+            Zone"less, a.
+            </p>
+            <p>Defn: Not having a zone; ungirded.<br>
+            The reeling goddess with the zoneless waist. Cowper.<br>
+            In careless folds, loose fell her zoneless vest. Mason.
+            </p>
+            <p>ZONNAR<br>
+            Zon"nar, n.
+            </p>
+            <p>Defn: See Zonar.</p>
+            <p>ZONULAR<br>
+            Zon"u*lar, a.
+            </p>
+            <p>Defn: Of or pertaining to a zone; zone-shaped. "The zonular type of a
+            placenta." Dana.</p>
+            <p>ZONULE<br>
+            Zon"ule, n.
+            </p>
+            <p>Defn: A little zone, or girdle.</p>
+            <p>ZONULET<br>
+            Zon"u*let, n.
+            </p>
+            <p>Defn: A zonule. Herrick.</p>
+            <p>ZONURE<br>
+            Zon"ure, n. Etym: [Zone + Gr. (Zoöl.)
+            </p>
+            <p>Defn: Any one of several of South African lizards of the genus<br>
+            Zonura, common in rocky situations.
+            </p>
+            <p>ZOO-; ZOOE-<br>
+            Zo"ö-.
+            </p>
+            <p>Defn: A combining form from Gr. zwo^,n an animal, as in zoögenic,
+            zoölogy, etc.</p>
+            <p>ZOOCHEMICAL; ZOOECHEMICAL<br>
+            Zo`ö*chem"ic*al, a.
+            </p>
+            <p>Defn: Pertaining to zoöchemistry.</p>
+            <p>ZOOCHEMISTRY; ZOOECHEMISTRY<br>
+            Zo`ö*chem"is*try, n. Etym: [Zoö- + chemistry.]
+            </p>
+            <p>Defn: Animal chemistry; particularly, the description of the chemical
+            compounds entering into the composition of the animal body, in
+            distinction from biochemistry.</p>
+            <p>ZOOCHEMY; ZOOECHEMY<br>
+            Zo*öch"e*my, n. Etym: [Zoö- + Gr.
+            </p>
+            <p>Defn: Animal chemistry; zoöchemistry. Dunglison.</p>
+            <p>ZOOCHLORELLA; ZOOECHLORELLA<br>
+            Zo`ö*chlo*rel"la, n. Etym: [NL., dim. from Gr. (Zoöl.)
+            </p>
+            <p>Defn: One of the small green granulelike bodies found in the interior
+            of certain stentors, hydras, and other invertebrates.</p>
+            <p>ZOOCYST; ZOOECYST<br>
+            Zo"ö*cyst, n. Etym: [Zoö- + cyst.] (Biol.)
+            </p>
+            <p>Defn: A cyst formed by certain Protozoa and unicellular plants which
+            the contents divide into a large number of granules, each of which
+            becomes a germ.</p>
+            <p>ZOOCYTIUM; ZOOECYTIUM<br>
+            Zo`ö*cy"ti*um, n.; pl. Zoöcytia. Etym: [NL., fr. Gr. (Zoöl.)
+            </p>
+            <p>Defn: The common support, often branched, of certain species of
+            social Infusoria.</p>
+            <p>ZOODENDRIUM; ZOOEDENDRIUM<br>
+            Zo`ö*den"dri*um, n.; pl. Zoödendria. Etym: [NL., fr. Gr. (Zoöl.)
+            </p>
+            <p>Defn: The branched, and often treelike, support of the colonies of
+            certain Infusoria.</p>
+            <p>ZOOECIUM<br>
+            Zo*oe"ci*um, n.; pl. Zooecia. Etym: [NL., fr. Gr. (Zoöl.)
+            </p>
+            <p>Defn: One of the cells or tubes which inclose the feeling zooids of<br>
+            Bryozoa. See Illust. of Sea Moss.
+            </p>
+            <p>ZOOERYTHRINE; ZOOEERYTHRINE<br>
+            Zo`ö*e*ryth"rine, n. Etym: [Zoö- + Gr. (Zoöl.)
+            </p>
+            <p>Defn: A peculiar organic red coloring matter found in the feathers of
+            various birds.</p>
+            <p>ZOOGAMOUS; ZOOEGAMOUS<br>
+            Zo*ög"a*mous, a. Etym: [Zoö- + Gr. (Biol.)
+            </p>
+            <p>Defn: Of or pertaining zoögamy.</p>
+            <p>ZOOGAMY; ZOOEGAMY<br>
+            Zo*ög"a*my, n. (Biol.)
+            </p>
+            <p>Defn: The sexual reproduction of animals.</p>
+            <p>ZOOGENIC; ZOOEGENIC<br>
+            Zo`ö*gen"ic, a. Etym: [Zoö- + -gen + -ic: cf. Gr. (Biol.)
+            </p>
+            <p>Defn: Of or pertaining to zoögeny, animal production.</p>
+            <p>ZOOGENY; ZOOEGENY; ZOOGONY; ZOOEGONY<br>
+            Zo*ög"e*ny, Zo*ög"o*ny, n. Etym: [Zoö- + root of Gr.
+            </p>
+            <p>Defn: The doctrine of the formation of living beings.</p>
+            <p>ZOOGEOGRAPHICAL; ZOOEGEOGRAPHICAL<br>
+            Zo`ö*ge`o*graph"ic*al, a.
+            </p>
+            <p>Defn: Of or pertaining to zoögraphy.</p>
+            <p>ZOOGEOGRAPHY; ZOOEGEOGRAPHY<br>
+            Zo`ö*ge*og"ra*phy, n. Etym: [Zoö- + geography.]
+            </p>
+            <p>Defn: The study or description of the geographical distribution of
+            animals.</p>
+            <p>ZOOGLOEA; ZOOEGLOEA<br>
+            Zo`ö*gloe"a, n. Etym: [NL., from Gr. (Biol.)
+            </p>
+            <p>Defn: A colony or mass of bacteria imbedded in a viscous gelatinous
+            substance. The zoögloea is characteristic of a transitory stage
+            through which rapidly multiplying bacteria pass in the course of
+            their evolution. Also used adjectively.</p>
+            <p>ZOOGRAPHER; ZOOEGRAPHER<br>
+            Zo*ög"ra*pher, n.
+            </p>
+            <p>Defn: One who describes animals, their forms and habits.</p>
+            <p>ZOOGRAPHIC; ZOOEGRAPHIC; ZOOGRAPHICAL; ZOOEGRAPHICAL<br>
+            Zo`ö*graph"ic, Zo`ö*graph"ic*al, a. Etym: [Cf. F. zoographique.]
+            </p>
+            <p>Defn: Of or pertaining to the description of animals.</p>
+            <p>ZOOGRAPHIST; ZOOEGRAPHIST<br>
+            Zo*ög"ra*phist, n.
+            </p>
+            <p>Defn: A zoögrapher.</p>
+            <p>ZOOGRAPHY; ZOOEGRAPHY<br>
+            Zo*ög"ra*phy, n. Etym: [Zoö- + -graphy: cf. F. zoographie.]
+            </p>
+            <p>Defn: A description of animals, their forms and habits.</p>
+            <p>ZOOID<br>
+            Zo"oid, a. Etym: [Zoö- + -oid.] (Biol.)
+            </p>
+            <p>Defn: Pertaining to, or resembling, an animal.</p>
+            <p>ZOOID<br>
+            Zo"oid, n.
+            </p>
+            <p>1. (Biol.)</p>
+            <p>Defn: An organic body or cell having locomotion, as a spermatic cell
+            or spermatozooid.</p>
+            <p>2. (Zoöl.)
+            (a) An animal in one of its inferior stages of development, as one of
+            the intermediate forms in alternate generation.
+            (b) One of the individual animals in a composite group, as of
+            Anthozoa, Hydroidea, and Bryozoa; — sometimes restricted to those
+            individuals in which the mouth and digestive organs are not
+            developed.</p>
+            <p>ZOOIDAL<br>
+            Zo*oid"al, a.
+            </p>
+            <p>Defn: Of or pertaining to a zooid; as, a zooidal form.</p>
+            <p>ZOOLATRY; ZOOELATRY<br>
+            Zo*öl"a*try, n. Etym: [Zoö- + Gr.
+            </p>
+            <p>Defn: The worship of animals.</p>
+            <p>ZOOLOGER; ZOOELOGER<br>
+            Zo*öl"o*ger, n.
+            </p>
+            <p>Defn: A zoölogist. Boyle.</p>
+            <p>ZOOLOGICAL; ZOOELOGICAL<br>
+            Zo`ö*log"ic*al, a. Etym: [Cf. F. zoologique.]
+            </p>
+            <p>Defn: Of or pertaining to zoölogy, or the science of animals.</p>
+            <p>ZOOLOGICALLY; ZOOELOGICALLY<br>
+            Zo`ö*log"ic*al*ly, adv.
+            </p>
+            <p>Defn: In a zoölogical manner; according to the principles of zoölogy.</p>
+            <p>ZOOLOGIST; ZOOELOGIST<br>
+            Zo*öl"o*gist, n. Etym: [Cf. F. zoologiste.]
+            </p>
+            <p>Defn: One who is well versed in zoölogy.</p>
+            <p>ZOOLOGIZE<br>
+            Zo*öl"o*gize, v. i.
+            </p>
+            <p>Defn: To study zoölogy; esp., to collect animals for study.</p>
+            <p>ZOOLOGY; ZOOELOGY<br>
+            Zo*öl"o*gy, n.; pl. Zoölogies. Etym: [Zoö- + -logy: cf. F. zoologie.<br>
+            See Zodiac.]
+            </p>
+            <p>1. That part of biology which relates to the animal kingdom,
+            including the structure, embryology, evolution, classification,
+            habits, and distribution of all animals, both living and extinct.</p>
+            <p>2. A treatise on this science.</p>
+            <p>ZOOMELANIN; ZOOEMELANIN<br>
+            Zo`ö*mel"a*nin, n. Etym: [Zoö- + melanin.] (Physiol. Chem.)
+            </p>
+            <p>Defn: A pigment giving the black color to the feathers of many birds.</p>
+            <p>ZOOMORPHIC; ZOOEMORPHIC<br>
+            Zo`ö*mor"phic, a. Etym: [Zoö- + Gr.
+            </p>
+            <p>Defn: Of or pertaining to zoömorphism.</p>
+            <p>ZOOMORPHISM; ZOOEMORPHISM<br>
+            Zo`ö*mor"phism, n.
+            </p>
+            <p>1. The transformation of men into beasts. [R.] Smart.</p>
+            <p>2. The quality of representing or using animal forms; as, zoömorphism
+            in ornament.</p>
+            <p>3. The representation of God, or of gods, in the form, or with the
+            attributes, of the lower animals.
+            To avoid the error of anthropomorphism, we fall into the vastly
+            greater, and more absurd, error of zoömorphism. Mivart.</p>
+            <p>ZOON; ZOOEN
+            Zo"ön, n.; pl. Zoa. Etym: [NL., fr. Gr. (Zoöl.)
+            (a) An animal which is the sole product of a single egg; — opposed
+            to zooid. H. Spencer.
+            (b) Any one of the perfectly developed individuals of a compound
+            animal.</p>
+            <p>ZOONIC; ZOOENIC<br>
+            Zo*ön"ic, a. Etym: [Gr. zoonique.]
+            </p>
+            <p>Defn: Of or pertaining to animals; obtained from animal substances.</p>
+            <p>ZOONITE; ZOOENITE
+            Zo"ö*nite, n. (Zoöl.)
+            (a) One of the segments of the body of an articulate animal.
+            (b) One of the theoretic transverse divisions of any segmented
+            animal.</p>
+            <p>ZOONOMY; ZOOENOMY<br>
+            Zo*ön"o*my, n. Etym: [Zoö- + Gr. zoonomie.]
+            </p>
+            <p>Defn: The laws animal life, or the science which treats of the
+            phenomena of animal life, their causes and relations.</p>
+            <p>ZOONULE; ZOOENULE<br>
+            Zo"ö*nule, n. Etym: [Dim. fr. Gr. (Zoöl.)
+            </p>
+            <p>Defn: Same as Zoönite.</p>
+            <p>ZOOPATHOLOGY; ZOOEPATHOLOGY<br>
+            Zo`ö*pa*thol"o*gy, n. Etym: [Zoö- + pathology.]
+            </p>
+            <p>Defn: Animal pathology.</p>
+            <p>ZOOPHAGA; ZOOEPHAGA<br>
+            Zo*öph"a*ga, n. pl. Etym: [NL., fr. Gr. (Zoöl.)
+            </p>
+            <p>Defn: An artificial group comprising various carnivorous and
+            insectivorous animals.</p>
+            <p>ZOOPHAGAN; ZOOEPHAGAN<br>
+            Zo*öph"a*gan, n. (Zoöl.)
+            </p>
+            <p>Defn: A animal that feeds on animal food.</p>
+            <p>ZOOPHAGOUS; ZOOEPHAGOUS<br>
+            Zo*öph"a*gous, a. Etym: [Gr.
+            </p>
+            <p>Defn: Feeding on animals.</p>
+            <p>Note: This is a more general term than either sarcophagous or
+            carnivorous.</p>
+            <p>ZOOPHILIST; ZOOEPHILIST<br>
+            Zo*öph"i*list, n. Etym: [Zoö- + Gr.
+            </p>
+            <p>Defn: A lover of animals. Southey.</p>
+            <p>ZOOPHILY; ZOOEPHILY<br>
+            Zo*öph"i*ly, n.
+            </p>
+            <p>Defn: Love of animals.</p>
+            <p>ZOOPHITE; ZOOEPHITE<br>
+            Zo"ö*phite, n.
+            </p>
+            <p>Defn: A zoöphyte. [R.]</p>
+            <p>ZOOPHORIC; ZOOEPHORIC<br>
+            Zo`ö*phor"ic, a. Etym: [Gr. zoophorique.]
+            </p>
+            <p>Defn: Bearing or supporting the figure of an animal; as, a zoöphoric
+            column.</p>
+            <p>ZOOPHOROUS; ZOOEPHOROUS<br>
+            Zo*öph"o*rous, n. Etym: [L., fr. Gr. Zoöphoric.] (Anc. Arch.)
+            </p>
+            <p>Defn: The part between the architrave and cornice; the frieze; — so
+            called from the figures of animals carved upon it.</p>
+            <p>ZOOPHYTA; ZOOEPHYTA<br>
+            Zo*öph"y*ta, n. pl. Etym: [NL., from Gr. (Zoöl.)
+            </p>
+            <p>Defn: An extensive artificial and heterogeneous group of animals,
+            formerly adopted by many zoölogists. It included the coelenterates,
+            echinoderms, sponges, Bryozoa, Protozoa, etc.</p>
+            <p>Note: Sometimes the name is restricted to the Coelentera, or to the<br>
+            Anthozoa.
+            </p>
+            <p>ZOOPHYTE; ZOOEPHYTE
+            Zo"ö*phyte, n. Etym: [F. zoophyte, Gr. Zodiac, and Be, v. i.] (Zoöl.)
+            (a) Any one of numerous species of invertebrate animals which more or
+            less resemble plants in appearance, or mode of growth, as the corals,
+            gorgonians, sea anemones, hydroids, bryozoans, sponges, etc.,
+            especially any of those that form compound colonies having a branched
+            or treelike form, as many corals and hydroids.
+            (b) Any one of the Zoöphyta.</p>
+            <p>ZOOPHYTIC; ZOOEPHYTIC; ZOOPHYTICAL; ZOOEPHYTICAL<br>
+            Zo`ö*phyt"ic, Zo`ö*phyt"ic*al, a. Etym: [Cf. F. zoophytique.] (Zoöl.)
+            </p>
+            <p>Defn: Of or pertaining to zoöphytes.</p>
+            <p>ZOOPHYTOID; ZOOEPHYTOID<br>
+            Zo*öph"y*toid, a. Etym: [Zoöphyte + -oid.] (Zoöl.)
+            </p>
+            <p>Defn: Pertaining to, or resembling, a zoöphyte.</p>
+            <p>ZOOPHYTOLOGICAL; ZOOEPHYTOLOGICAL<br>
+            Zo`ö*phyt`o*log"ic*al, a. Etym: [Cf. F. zoophytologique.]
+            </p>
+            <p>Defn: Of or pertaining to zoöphytology; as, zoöphytological
+            observations.</p>
+            <p>ZOOPHYTOLOGY; ZOOEPHYTOLOGY<br>
+            Zo*öph`y*tol"o*gy, n. Etym: [Zoöphyte + -logy: cf. F. zoophytologie.]
+            </p>
+            <p>Defn: The natural history zoöphytes.</p>
+            <p>ZOOPRAXISCOPE; ZOOEPRAXISCOPE<br>
+            Zo`ö*prax"i*scope, n. Etym: [Zoö- + Gr. -scope.]
+            </p>
+            <p>Defn: An instrument similar to, or the same as, the, the
+            phenakistoscope, by means of which pictures projected upon a screen
+            are made to exhibit the natural movements of animals, and the like.</p>
+            <p>ZOOPSYCHOLOGY; ZOOEPSYCHOLOGY<br>
+            Zo`ö*psy*chol"o*gy, n. Etym: [Zoö- + psychology.]
+            </p>
+            <p>Defn: Animal psychology.</p>
+            <p>ZOOSPERM; ZOOESPERM<br>
+            Zo"ö*sperm, n. Etym: [Zoö- + sperm.] (Biol.)
+            </p>
+            <p>Defn: One of the spermatic particles; spermatozoid.</p>
+            <p>ZOOSPORANGIUM; ZOOESPORANGIUM<br>
+            Zo`ö*spo*ran"gi*um, n.; pl. -sporangia. Etym: [NL. See Zoö-, and<br>
+            Sporangium.] (Bot.)
+            </p>
+            <p>Defn: A spore, or conceptacle containing zoöspores.</p>
+            <p>ZOOSPORE; ZOOESPORE<br>
+            Zo"ö*spore, n. Etym: [Zoö- + spore.]
+            </p>
+            <p>1. (Bot.)</p>
+            <p>Defn: A spore provided with one or more slender cilia, by the
+            vibration of which it swims in the water. Zoöspores are produced by
+            many green, and by some olive-brown, algæ. In certain species they
+            are divided into the larger macrozoöspores and the smaller
+            microzoöspores. Called also sporozoid, and swarmspore.</p>
+            <p>2. (Zoöl.)</p>
+            <p>Defn: See Swarmspore.</p>
+            <p>ZOOSPORIC; ZOOESPORIC<br>
+            Zo`ö*spor"ic, a.
+            </p>
+            <p>Defn: Of or pertaining to zoöspores; of the nature of zoöspores.</p>
+            <p>ZOOTIC; ZOOETIC<br>
+            Zo*öt"ic, a. Etym: [Gr.
+            </p>
+            <p>Defn: Containing the remains of organized bodies; — said of rock or
+            soil.</p>
+            <p>ZOOTOMICAL; ZOOETOMICAL<br>
+            Zo`ö*tom"ic*al, a. Etym: [Cf. F. zootomique.]
+            </p>
+            <p>Defn: Of or pertaining to zoötomy.</p>
+            <p>ZOOTOMIST; ZOOETOMIST<br>
+            Zo*öt"o*mist, n. Etym: [Cf. F. zootomiste.]
+            </p>
+            <p>Defn: One who dissects animals, or is skilled in zoötomy.</p>
+            <p>ZOOTOMY; ZOOETOMY<br>
+            Zo*öt"o*my, n. Etym: [Zoö- + Gr. zootomie.]
+            </p>
+            <p>Defn: The dissection or the anatomy of animals; — distinguished from
+            androtomy.</p>
+            <p>ZOOTROPHIC; ZOOETROPHIC<br>
+            Zo`ö*troph"ic, a. Etym: [Gr. Zoö-, and Trophic.] (Physiol.)
+            </p>
+            <p>Defn: Of or pertaining to the nourishment of animals.</p>
+            <p>ZOOZOO<br>
+            Zoo"zoo`, n. Etym: [Of imitative origin.] (Zoöl.)
+            </p>
+            <p>Defn: The wood pigeon. [Prov. Eng.]</p>
+            <p>ZOPE<br>
+            Zope, n. Etym: [G.] (Zoöl.)
+            </p>
+            <p>Defn: A European fresh-water bream (Abramis ballerus).</p>
+            <p>ZOPILOTE<br>
+            Zo"pi*lote, n. Etym: [Sp.] (Zoöl.)
+            </p>
+            <p>Defn: The urubu, or American black vulture.</p>
+            <p>ZORIL<br>
+            Zor"il, n. (Zoöl.)
+            </p>
+            <p>Defn: Same as Zorilla.</p>
+            <p>ZORILLA
+            Zo*ril"la, n. Etym: [Sp. zorilla, zorillo, dim. of zorra, zorro, a
+            fox: cf. F. zorille.] (Zoöl.)</p>
+            <p>Defn: Either one of two species of small African carnivores of the
+            genus Ictonyx allied to the weasels and skunks. [Written also zoril,
+            and zorille.]</p>
+            <p>Note: The best-known species (Ictonyx zorilla) has black shiny fur
+            with white bands and spots. It has anal glands which produce a very
+            offensive secretion, similar to that of the skunk. It feeds upon
+            birds and their eggs and upon small mammals, and is often very
+            destructive to poultry. It is sometimes tamed by the natives, and
+            kept to destroy rats and mice. Called also mariput, Cape polecat, and
+            African polecat. The name is sometimes erroneously applied to the
+            American skunk.</p>
+            <p>ZOROASTRIAN<br>
+            Zo`ro*as"tri*an, a.
+            </p>
+            <p>Defn: Of or pertaining to Zoroaster, or his religious system.</p>
+            <p>ZOROASTRIAN<br>
+            Zo`ro*as"tri*an, n.
+            </p>
+            <p>Defn: A follower of Zoroaster; one who accepts Zoroastrianism.</p>
+            <p>ZOROASTRIANISM<br>
+            Zo`ro*as"tri*an*ism, n.
+            </p>
+            <p>Defn: The religious system of Zoroaster, the legislator and prophet
+            of the ancient Persians, which was the national faith of Persia;
+            mazdeism. The system presupposes a good spirit (Ormuzd) and an
+            opposing evil spirit (Ahriman). Cf. Fire worship, under Fire, and
+            Parsee.</p>
+            <p>ZOROASTRISM<br>
+            Zo`ro*as"trism, n.
+            </p>
+            <p>Defn: Same as Zoroastrianism. Tylor.</p>
+            <p>ZOSTER<br>
+            Zos"ter, n. Etym: [L., fr. Gr. Zone.] (Med.)
+            </p>
+            <p>Defn: Shingles.</p>
+            <p>ZOSTERA<br>
+            Zos"te*ra, n. Etym: [NL.] (Bot.)
+            </p>
+            <p>Defn: A genus of plants of the Naiadaceæ, or Pondweed family. Zostera
+            marina is commonly known as sea wrack, and eelgrass.</p>
+            <p>ZOSTEROPS<br>
+            Zos"ter*ops, n. Etym: [NL., fr. Gr. (Zoöl.)
+            </p>
+            <p>Defn: A genus of birds that comprises the white-eyes. See White-eye.</p>
+            <p>ZOUAVE
+            Zouave, n. Etym: [F., fr. Ar. Zouaoua a tribe of Kabyles living among
+            the Jurjura mountains in Algeria.] (Mil.)
+            (a) One of an active and hardy body of soldiers in the French
+            service, originally Arabs, but now composed of Frenchmen who wear the
+            Arab dress.
+            (b) Hence, one of a body of soldiers who adopt the dress and drill of
+            the Zouaves, as was done by a number of volunteer regiments in the
+            army of the United States in the Civil War, 1861-65.</p>
+            <p>ZOUNDS<br>
+            Zounds, interj. Etym: [Contracted from God's wounds.]
+            </p>
+            <p>Defn: An exclamation formerly used as an oath, and an expression of
+            anger or wonder.</p>
+            <p>ZOUTCH<br>
+            Zoutch, v. t. (Cookery)
+            </p>
+            <p>Defn: To stew, as flounders, eels, etc., with just enough or liquid
+            to cover them. Smart.</p>
+            <p>ZUBR<br>
+            Zubr, n. Etym: [Polish .] (Zoöl.)
+            </p>
+            <p>Defn: The aurochs.</p>
+            <p>ZUCHE<br>
+            Zuche, n.
+            </p>
+            <p>Defn: A stump of a tree. Cowell.</p>
+            <p>ZUCHETTO<br>
+            Zu*chet"to, n. Etym: [It. zucchetto.] (R. C. Ch.)
+            </p>
+            <p>Defn: A skullcap covering the tonsure, worn under the berretta. The
+            pope's is white; a cardinal's red; a bishop's purple; a priest's
+            black.</p>
+            <p>ZUFOLO<br>
+            Zu"fo*lo, n. Etym: [It.] (Mus.)
+            </p>
+            <p>Defn: A little flute or flageolet, especially that which is used to
+            teach birds. [Written also zuffolo.]</p>
+            <p>ZUIAN<br>
+            Zu"ñi*an, a.
+            </p>
+            <p>Defn: Of or pert. to the Zuñis, or designating their linguistic
+            stock. —n.</p>
+            <p>Defn: A Zuñi.</p>
+            <p>ZUISIN<br>
+            Zui"sin, n. (Zoöl.)
+            </p>
+            <p>Defn: The American widgeon. [Local, U. S.]</p>
+            <p>ZULU<br>
+            Zu"lu, n. [Also Zooloo.]
+            </p>
+            <p>1. Any member of the tribe of Zulus; a Zulu-Kaffir. See Zulus.</p>
+            <p>2.  (Philol.) One of the most important members of the South African,
+            or Bantu, family of languages, spoken partly in Natal and partly in
+            Zululand, but understood, and more or less in use, over a wide
+            territory, at least as far north as the Zambezi; — called also Zulu-
+            Kaffir.</p>
+            <p>ZULU-KAFFIR<br>
+            Zu"lu-Kaf"fir, n.
+            </p>
+            <p>Defn: A member of the Bantu race comprising the Zulus and the<br>
+            Kaffirs.
+            </p>
+            <p>ZULUS<br>
+            Zu"lus, n. pl.; sing. Zulu (. (Ethnol.)
+            </p>
+            <p>Defn: The most important tribe belonging to the Kaffir race. They
+            inhabit a region on the southeast coast of Africa, but formerly
+            occupied a much more extensive country. They are noted for their
+            warlike disposition, courage, and military skill.</p>
+            <p>ZUMBOORUK<br>
+            Zum*boo"ruk, n. Etym: [Turk. &amp; Ar. zamb, fr. Ar. zamb a hornet.]<br>
+            (Mil.)
+            </p>
+            <p>Defn: A small cannon supported by a swiveled rest on the back of a
+            camel, whence it is fired, — used in the East.</p>
+            <p>ZUMIC; ZUMOLOGICAL; ZUMOLOGY; ZUMOMETER
+            Zu"mic, a., Zu`mo*log"ic*al, a., Zu*mol"o*gy, n., Zu*mom"e*ter, n.,
+            etc.</p>
+            <p>Defn: See Zymic, Zymological, etc.</p>
+            <p>ZUNIS<br>
+            Zu"nis, n. pl.; sing. Zuni (. (Ethnol.)
+            </p>
+            <p>Defn: A tribe of Pueblo Indians occupying a village in New Mexico, on
+            the Zuni River.</p>
+            <p>ZUNYITE<br>
+            Zun"yite, n. (Min.)
+            </p>
+            <p>Defn: A fluosilicate of alumina occurring in tetrahedral crystals at
+            the Zuñi mine in Colorado.</p>
+            <p>ZWANZIGER<br>
+            Zwan"zi*ger, n. Etym: [G.]
+            </p>
+            <p>Defn: Am Austrian silver coin equivalent to 20 kreutzers, or about 10
+            cents.</p>
+            <p>ZWIEBACK
+            Zwie"back`, n. [G., fr. zwie-two, twice (see Twice) + backen to
+            bake.]</p>
+            <p>Defn: A kind of biscuit or  rusk first baked in a loaf and afterwards
+            cut and toasted.</p>
+            <p>ZWINGLIAN<br>
+            Zwing"li*an, a. (Theol.)
+            </p>
+            <p>Defn: Of or pertaining to Ulric Zwingli (1481-1531), the reformer of
+            German Switzerland, who maintained that in the Lord's Supper the true
+            body of Christ is present by the contemplation of faith but not in
+            essence or reality, and that the sacrament is a memorial without
+            mystical elements. — n.</p>
+            <p>Defn: A follower of Zwingli.</p>
+            <p>ZYGANTRUM<br>
+            Zy*gan"trum, n.; pl. Zygantra. Etym: [Gr. (Anat.)
+            </p>
+            <p>Defn: See under Zygosphene.</p>
+            <p>ZYGAPOPHYSIS<br>
+            Zyg`a*poph"y*sis, n.; pl. Zygapophyses. Etym: [Gr. apophysis.]<br>
+            (Anat.)
+            </p>
+            <p>Defn: One of the articular processes of a vertebra, of which there
+            are usually four, two anterior and two posterior. See under Vertebra.
+             — Zyg`ap*o*phys"i*al, a.</p>
+            <p>ZYGENID<br>
+            Zyg"e*nid, n. Etym: [Cf. Gr. (Zoöl.)
+            </p>
+            <p>Defn: Any one of numerous species of moths of the family Zygænidæ,
+            most of which are bright colored. The wood nymph and the vine
+            forester are examples. Also used adjectively.</p>
+            <p>ZYGOBRANCHIA<br>
+            Zyg`o*bran"chi*a, n. pl. Etym: [NL., from Gr. (Zoöl.)
+            </p>
+            <p>Defn: A division of marine gastropods in which the gills are
+            developed on both sides of the body and the renal organs are also
+            paired. The abalone (Haliotis) and the keyhole limpet (Fissurella)
+            are examples.</p>
+            <p>ZYGOBRANCHIATE<br>
+            Zyg`o*bran"chi*ate, a. (Zoöl.)
+            </p>
+            <p>Defn: Of or pertaining to the Zygobranchia.</p>
+            <p>ZYGODACTYL; ZYGODACTYLE<br>
+            Zyg`o*dac"tyl, Zyg`o*dac"tyle, n. Etym: [See Zygodactylic.] (Zoöl.)
+            </p>
+            <p>Defn: Any zygodactylous bird.</p>
+            <p>ZYGODACTYLAE<br>
+            Zyg`o*dac"ty*læ, n. pl. Etym: [NL.] (Zoöl.)
+            </p>
+            <p>Defn: The zygodactylous birds. In a restricted sense applied to a
+            division of birds which includes the barbets, toucans, honey guides,
+            and other related birds.</p>
+            <p>ZYGODACTYLI<br>
+            Zyg`o*dac"ty*li, n. pl. Etym: [NL.] (Zoöl.)
+            </p>
+            <p>Defn: Same as Scansores.</p>
+            <p>ZYGODACTYLIC; ZYGODACTYLOUS<br>
+            Zyg`o*dac"ty*lic, Zyg`o*dac"tyl*ous, a. Etym: [Gr. zygodactyle.]<br>
+            (Zoöl.)
+            </p>
+            <p>Defn: Yoke-footed; having the toes disposed in pairs; — applied to
+            birds which have two toes before and two behind, as the parrot,
+            cuckoo, woodpecker, etc.</p>
+            <p>ZYGOMA
+            Zy*go"ma, n. Etym: [NL., fr. Gr. (Anat.)
+            (a) The jugal, malar, or cheek bone.
+            (b) The zygomatic process of the temporal bone.
+            (c) The whole zygomatic arch.</p>
+            <p>ZYGOMATIC<br>
+            Zyg`o*mat"ic, a. Etym: [Cf. F. zygomatique.] (Anat.)
+            </p>
+            <p>Defn: Of, pertaining to, or in the region of, the zygoma. Zygomatic
+            arch, the arch of bone beneath the orbit, formed in most mammals by
+            the union of the malar, or jugal, with the zygomatic process of the
+            temporal bone. In the lower vertebrates other bones may help to form
+            it, and there may be two arches on each side of the skull, as in some
+            reptiles.
+             — Zygomatic process, a process of the temporal or squamosal bone
+            helping to form the zygomatic arch.</p>
+            <p>ZYGOMORPHIC; ZYGOMORPHOUS<br>
+            Zyg`o*mor"phic, Zyg`o*mor"phous, a. Etym: [Gr. (Biol.)
+            </p>
+            <p>Defn: Symmetrical bilaterally; — said of organisms, or parts of
+            organisms, capable of division into two symmetrical halves only in a
+            single plane.</p>
+            <p>ZYGOPHYTE<br>
+            Zy"go*phyte, n. Etym: [Gr. (Bot.)
+            </p>
+            <p>Defn: Any plant of a proposed class or grand division (Zygophytes,
+            Zygophyta, or Zygosporeæ), in which reproduction consists in the
+            union of two similar cells. Cf. Oöphyte.</p>
+            <p>ZYGOSIS<br>
+            Zy*go"sis, n. Etym: [NL., fr. Gr. (Biol.)
+            </p>
+            <p>Defn: Same as Conjugation.</p>
+            <p>ZYGOSPERM<br>
+            Zyg"o*sperm, n. Etym: [Gr. sperm.] (Bot.)
+            </p>
+            <p>Defn: A spore formed by the union of the contents of two similar
+            cells, either of the same or of distinct individual plants.
+            Zygosperms are found in certain orders of algæ and fungi.</p>
+            <p>ZYGOSPHENE<br>
+            Zyg"o*sphene, n. Etym: [Gr. (Anat.)
+            </p>
+            <p>Defn: A median process on the front part of the neural arch of the
+            vertebræ of most snakes and some lizards, which fits into a fossa,
+            called the zygantrum, on the back part of the arch in front.</p>
+            <p>ZYGOSPORE
+            Zyg"o*spore, n. Etym: [Gr. spore.] (Bot.)
+            (a) Same as Zygosperm.
+            (b) A spore formed by the union of several zoöspores; — called also
+            zygozoöspore.</p>
+            <p>ZYLONITE<br>
+            Zy"lon*ite, n. Etym: [Gr.
+            </p>
+            <p>Defn: Celluloid.</p>
+            <p>ZYMASE<br>
+            Zym"ase, n. Etym: [From Zyme.] (Physiol. Chem.)
+            </p>
+            <p>Defn: A soluble ferment, or enzyme. See Enzyme.</p>
+            <p>ZYME<br>
+            Zyme, n. Etym: [Gr.
+            </p>
+            <p>1. A ferment.</p>
+            <p>2. (Med.)</p>
+            <p>Defn: The morbific principle of a zymotic disease. Quain.</p>
+            <p>ZYMIC<br>
+            Zym"ic, a. (Old Chem.)
+            </p>
+            <p>Defn: Pertaining to, or produced by, fermentation; — formerly, by
+            confusion, used to designate lactic acid.</p>
+            <p>ZYMOGEN<br>
+            Zym"o*gen, n. Etym: [Zyme + -gen.] (Physiol. Chem.)
+            </p>
+            <p>Defn: A mother substance, or antecedent, of an enzyme or chemical
+            ferment; — applied to such substances as, not being themselves
+            actual ferments, may by internal changes give rise to a ferment.
+            The pancreas contains but little ready-made ferment, though there is
+            present in it a body, zymogen, which gives birth to the ferment.
+            Foster.</p>
+            <p>ZYMOGENE<br>
+            Zym"o*gene, n. Etym: [Zyme + root of Gr. (Biol.)
+            </p>
+            <p>Defn: One of a physiological group of globular bacteria which
+            produces fermentations of diverse nature; — distinguished from
+            pathogene.</p>
+            <p>ZYMOGENIC
+            Zym`o*gen"ic, a. (Biol.)
+            (a) Pertaining to, or formed by, a zymogene.
+            (b) Capable of producing a definite zymogen or ferment. Zymogenic
+            organism (Biol.), a microörganism, such as the yeast plant of the
+            Bacterium lactis, which sets up certain fermentative processes by
+            which definite chemical products are formed; — distinguished from a
+            pathogenic organism. Cf. Micrococcus.</p>
+            <p>ZYMOLOGIC; ZYMOLOGICAL<br>
+            Zy`mo*log"ic, Zy`mo*log"ic*al, a. Etym: [Cf. F. zymologique.]
+            </p>
+            <p>Defn: Of or pertaining to zymology.</p>
+            <p>ZYMOLOGIST<br>
+            Zy*mol"o*gist, n.
+            </p>
+            <p>Defn: One who is skilled in zymology, or in the fermentation of
+            liquors.</p>
+            <p>ZYMOLOGY<br>
+            Zy*mol"o*gy, n. Etym: [Zyme + -logy: cf. F. zymologie.]
+            </p>
+            <p>Defn: A treatise on the fermentation of liquors, or the doctrine of
+            fermentation. [Written also zumology.]</p>
+            <p>ZYMOLYSIS<br>
+            Zy*mol"y*sis, n. [NL. See Zyme, and Lysis.] (Physiol. Chem.)
+            </p>
+            <p>Defn: The action of enzymes; also, the changes produced by such
+            action. —Zy`mo*lyt"ic (#), a.</p>
+            <p>ZYMOME<br>
+            Zy"mome, n. Etym: [Gr. (Old Chem.)
+            </p>
+            <p>Defn: A glutinous substance, insoluble in alcohol, resembling
+            legumin; — now called vegetable fibrin, vegetable albumin, or gluten
+            casein.</p>
+            <p>ZYMOMETER; ZYMOSIMETER
+            Zy*mom"e*ter, Zy`mo*sim"e*ter, n. Etym: [Gr. -meter: cf. F.
+            zymosimètre.]</p>
+            <p>Defn: An instrument for ascertaining the degree of fermentation
+            occasioned by the mixture of different liquids, and the degree of
+            heat which they acquire in fermentation.</p>
+            <p>ZYMOPHYTE<br>
+            Zym"o*phyte, n. Etym: [Zyme + Gr. (Physiol. Chem.)
+            </p>
+            <p>Defn: A bacteroid ferment.</p>
+            <p>ZYMOSE<br>
+            Zy*mose", n. (Chem.)
+            </p>
+            <p>Defn: Invertin.</p>
+            <p>ZYMOSIS
+            Zy*mo"sis, n. Etym: [NL., fr. Gr. (Med.)
+            (a) A fermentation; hence, an analogous process by which an
+            infectious disease is believed to be developed.
+            (b) A zymotic disease. [R.]</p>
+            <p>ZYMOTIC<br>
+            Zy*mot"ic, a. Etym: [Gr.
+            </p>
+            <p>1. Of, pertaining to, or caused by, fermentation.</p>
+            <p>2. (Med.)</p>
+            <p>Defn: Designating, or pertaining to, a certain class of diseases. See
+            Zymotic disease, below. Zymotic disease (Med.), any epidemic,
+            endemic, contagious, or sporadic affection which is produced by some
+            morbific principle or organism acting on the system like a ferment.</p>
+            <p>ZYTHEM<br>
+            Zy"them, n.
+            </p>
+            <p>Defn: See Zythum.</p>
+            <p>ZYTHEPSARY<br>
+            Zy*thep"sa*ry, n. Etym: [Gr.
+            </p>
+            <p>Defn: A brewery. [R.]</p>
+            <p>ZYTHUM<br>
+            Zy"thumn. Etym: [L.fr. Gr.
+            </p>
+            <p>Defn: A kind of ancient malt beverage; a liquor made from malt and
+            wheat. [Written also zythem.]</p>
+            </div><!--end chapter-->
+            <div>
+                <h6>Commands</h6>
+                <ul>
+                    <li class="highlight" style="--theme:#e65763"><b>Ctrl+R</b> : Red Text</li>
+                    <li class="highlight" style="--theme:#f7f779"><b>Ctrl+Y</b> : Yellow Text</li>
+                    <li class="highlight" style="--theme:#2ce4e8"><b>Ctrl+B</b> : Blue Text</li>
+                    <li class="highlight" style="--theme:#6eee87"><b>Ctrl+G</b> : Green Text</li>
+                </ul>
+            </div>
+            
+            
+    </div>
+    <div class="toc-container">
+        <a href="../y/index.html" class="toc-item">Y</a>
+        <a href="../index.html" class="toc-item">MENU</a>
+        
+        
+      </div>
+    <script>
+        function searchAndHighlight() {
+            // Get the search term from input
+            const searchTerm = document.getElementById("searchBox").value.trim();
+            if (!searchTerm) return; // Exit if search term is empty
+            
+            // Get the dictionary content div
+            const dictionaryDiv = document.getElementById("dictionary");
+            
+            // Clear previous highlights
+            dictionaryDiv.innerHTML = dictionaryDiv.innerHTML.replace(/<span class="highlight">(.*?)<\/span>/g, "$1");
+
+            // Search for all occurrences of the word (case-insensitive)
+            const regex = new RegExp(`\\b(${searchTerm})\\b`, "gi");
+            let matchCount = 0;
+            dictionaryDiv.innerHTML = dictionaryDiv.innerHTML.replace(regex, (match) => {
+                matchCount++;
+                return `<span class="highlightt">${match}</span>`;
+            });
+
+            if (matchCount > 0) {
+                // Scroll to the first occurrence only
+                const firstHighlight = document.querySelector(".highlightt");
+                if (firstHighlight) {
+                    firstHighlight.scrollIntoView({ behavior: "smooth", block: "center" });
+                }
+            } else {
+                alert("Word not found!");
+            }
+        }
+    </script>
+<script>
+console.clear();
+
+const textarea = document.querySelector("div[contenteditable='true']");
+
+function KeyPress(e) {
+	const selectedText = selection();
+	let evtobj = window.event ? event : e;
+	if (evtobj.keyCode === 82 && evtobj.ctrlKey && selectedText[1])
+		color(selectedText, "#e65763");
+	else if (evtobj.keyCode === 89 && evtobj.ctrlKey && selectedText[1])
+		color(selectedText, "#f7f779");
+	else if (evtobj.keyCode === 66 && evtobj.ctrlKey && selectedText[1])
+		color(selectedText, "#2ce4e8");
+	else if (evtobj.keyCode === 71 && evtobj.ctrlKey && selectedText[1])
+		color(selectedText, "#6eee87");
+}
+function color(text, color) {
+	document.querySelector("div[contenteditable='true']").innerHTML = `${
+		textarea.innerHTML.split(text)[0]
+	}<span class="highlight" style="--theme:${color}">${text}</span>${
+		textarea.innerHTML.split(text)[1]
+	}`;
+}
+function selection() {
+	if (textarea.innerHTML.includes(document.getSelection())) {
+		// console.log(
+		// 	textarea.innerText.substring(0, document.getSelection().anchorOffset)
+		// );
+		// console.log(document.getSelection().getRangeAt(0));
+		// return [
+		// 	textarea.innerText.substring(0, document.getSelection().anchorOffset),
+		// 	textarea.innerText.substring(
+		// 		document.getSelection().anchorOffset,
+		// 		document.getSelection().extentOffset
+		// 	),
+		// 	textarea.innerText.substring(document.getSelection().extentOffset)
+		// ];
+		return document.getSelection().toString();
+	}
+}
+
+document.onkeydown = KeyPress;
+
+    </script>
+</body>
+</html>

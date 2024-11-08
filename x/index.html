@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary Search</title>
+    <style>
+        * {
+     text-align: center;
+ }
+ h2 {
+     color: blue;
+ }
+ .toc-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 1rem;
+   text-align: center;
+ }
+ .toc-item {
+   padding: 0.5rem 1rem;
+   background-color: #007BFF;
+   color: white;
+   text-decoration: none;
+   border-radius: 4px;
+   font-size: 1.2rem;
+   text-align: center;
+   width: 50px;
+   text-align: center;
+ }
+ .toc-item:hover {
+   background-color: #0056b3;
+ }
+ #highlighter {
+ min-height: 100vh;
+ width: 100vw;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+ align-items: center;
+}
+#highlighter > div:nth-of-type(1) {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+#highlighter > div:nth-of-type(1) > h1 {
+ font-size: 5rem;
+ margin-bottom: 10px;
+}
+#highlighter > div:nth-of-type(1) > p {
+ max-width: 80%;
+}
+#highlighter > div:nth-of-type(2) {
+ padding: 10px;
+ margin: 0 10px;
+}
+#highlighter > div:nth-of-type(3) > h6 {
+ font-size: 2rem;
+}
+#highlighter > div:nth-of-type(3) > ul {
+ list-style-type: none;
+}
+
+#highlighter > div:nth-of-type(3) b {
+ font-size: 1.2rem;
+}
+.highlight {
+ background-color: var(--theme);
+}
+.highlightt {
+         background-color: yellow;
+         font-weight: bold;
+     }
+ </style>
+</head>
+<body>
+
+    <input type="text" id="searchBox" placeholder="Enter a word to search">
+    <button onclick="searchAndHighlight()">Search</button>
+    
+    <div id="dictionary">
+      
+        
+
+        <div class="chapter">
+            <h2><a id="chap24"></a>X<br>
+            X (eks).</h2>
+            <p>Defn: X, the twenty-fourth letter of the English alphabet, has three
+            sounds; a compound nonvocal sound (that of ks), as in wax; a compound
+            vocal sound (that of gz), as in example; and, at the beginning of a
+            word, a simple vocal sound (that of z), as in xanthic.  See Guide to
+            Pronunciation, §§ 217, 270, 271.</p>
+            <p>The form and value of X are from the Latin X, which is from the Greek
+            X, which in some Greek alphabets had the value of ks, though in the
+            one now in common use it represents an aspirated sound of k.</p>
+            <p>XANTHAMIDE<br>
+            Xanth*am"ide, n. [Xanthic + amide.] (Chem.)
+            </p>
+            <p>Defn: An amido derivative of xanthic acid obtained as a white
+            crystalline substance, C2H5O.CS.NH2; — called also xanthogen amide.</p>
+            <p>XANTHATE<br>
+            Xan"thate, n. [See Xanthic.] (Chem.)
+            </p>
+            <p>Defn: A salt of xanthic; a xanthogenate.</p>
+            <p>XANTHELASMA
+            Xan`the*las"ma, n. [NL.; Gr. xanqo`s yellow + 'e`lasma a metal
+            plate.] (Med.)</p>
+            <p>Defn: See Xanthoma.</p>
+            <p>XANTHIAN<br>
+            Xan"thi*an, a.
+            </p>
+            <p>Defn: Of or pertaining to Xanthus, an ancient town on Asia Minor; —
+            applied especially to certain marbles found near that place, and now
+            in the British Museum.</p>
+            <p>XANTHIC<br>
+            Xan"thic, a. [Gr. xanqo`s yellow: cf. F. xanthique.]
+            </p>
+            <p>1. Tending toward a yellow color, or to one of those colors, green
+            being excepted, in which yellow is a constituent, as scarlet, orange,
+            etc.</p>
+            <p>2. (Chem.)<br>
+             (a) Possessing, imparting, or producing a yellow color; as, xanthic<br>
+            acid.<br>
+             (b) Of or pertaining to xanthic acid, or its compounds; xanthogenic.<br>
+             (c) Of or pertaining to xanthin.
+            </p>
+            <p>Xanthic acid (Chem.), a heavy, astringent, colorless oil,
+            C2H5O.CS.SH, having a pungent odor. It is produced by leading carbon
+            disulphide into a hot alcoholic solution of potassium hydroxide. So
+            called from the yellow color of many of its salts. Called also
+            xanthogenic acid. — Xanthic colors (Bot.), those colors (of flowers)
+            having some tinge of yellow; — opposed to cyanic colors.  See under
+            Cyanic.</p>
+            <p>XANTHIDE<br>
+            Xan"thide, n. [See Xantho-.] (Chem.)
+            </p>
+            <p>Defn: A compound or derivative of xanthogen. [Archaic]</p>
+            <p>XANTHIDIUM<br>
+            Xan*thid"i*um, n.; pl. Xanthidia (#). [NL., fr. Gr. xanqo`s yellow.]<br>
+            (Bot.)
+            </p>
+            <p>Defn: A genus of minute unicellular algæ of the desmids. These algæ
+            have a rounded shape and are armed with glochidiate or branched
+            aculei. Several species occur in ditches, and others are found fossil
+            in flint or hornstone.</p>
+            <p>XANTHIN<br>
+            Xan"thin, n. [Gr. xanqo`s yellow.]
+            </p>
+            <p>1. (Physiol. Chem.) A crystalline nitrogenous body closely related to
+            both uric acid and hypoxanthin, present in muscle tissue, and
+            occasionally found in the urine and in some urinary calculi. It is
+            also present in guano. So called from the yellow color of certain of
+            its salts (nitrates).</p>
+            <p>2. (Chem.) A yellow insoluble coloring matter extracted from yellow
+            flowers; specifically, the coloring matter of madder.  [Formerly
+            written also xanthein.]</p>
+            <p>3. (Chem.) One of the gaseous or volatile decomposition products of
+            the xanthates, and probably identical with carbon disulphide.  [Obs.]</p>
+            <p>XANTHINE; XANTHIN<br>
+            Xan"thine, n. Also Xan"thin . [Gr. xanqo`s yellow.] (Physiol. Chem.)
+            </p>
+            <p>Defn: A white microcrystalline nitrogenous compound, C5H4O2N4,
+            present in muscle tissue, in the liver, spleen, pancreas, and other
+            organs, and also in urine (in small quantities) and some urinary
+            calculi, and in the juices of certain plants; — so called because it
+            leaves a yellow residue when evaporated to dryness with nitric acid.
+            Xanthine is closely related to uric acid.</p>
+            <p>XANTHININE<br>
+            Xan"thi*nine, n. [Gr. xanqo`s yellow + quinine.] (Chem.)
+            </p>
+            <p>Defn: A complex nitrogenous substance related to urea and uric acid,
+            produced as a white powder; — so called because it forms yellow
+            salts, and because its solution forms a blue fluorescence like
+            quinine.</p>
+            <p>XANTHIUM
+            Xan"thi*um, n. [NL., fr. Gr. xa`nqion a plant used for dyeing the
+            hair yellow, said to be the Xanthium strumarium, from xanqo`s
+            yellow.] (Bot.)</p>
+            <p>Defn: A genus of composite plants in which the scales of the
+            involucre are united so as to form a kind of bur; cocklebur; clotbur.</p>
+            <p>XANTHO-<br>
+            Xan"tho-.
+            </p>
+            <p>Defn: A combining form from Gr. xanqo`s yellow; as in xanthocobaltic
+            salts. Used also adjectively in chemistry.</p>
+            <p>XANTHOCARPOUS<br>
+            Xan`tho*car"pous, a. [Xantho-+ Gr. karpo`s fruit.] (Bot.)
+            </p>
+            <p>Defn: Having yellow fruit.</p>
+            <p>XANTHOCHROI<br>
+            Xan*thoch"ro*i, n. pl. [NL.  See Xanthochroic.] (Ethnol.)
+            </p>
+            <p>Defn: A division of the Caucasian races, comprising the lighter-
+            colored members.</p>
+            <p>The Xanthochroi, or fair whites, . . . are the prevalent inhabitants
+            of Northern Europe, and the type may be traced into North Africa, and
+            eastward as far as Hindostan.
+            Tylor.</p>
+            <p>XANTHOCHROIC<br>
+            Xan`tho*chro"ic, a. [Xantho-+ Gr. chro`a color.] (Ethnol.)
+            </p>
+            <p>Defn: Having a yellowish or fair complexion; of or pertaining to the<br>
+            Xanthochroi.
+            </p>
+            <p>XANTHOCHROID<br>
+            Xan"tho*chroid, a. [See under Xanthrochroic, -oid.] (Ethnol.)
+            </p>
+            <p>Defn: Having a yellowish or fair complexion. — n.</p>
+            <p>Defn: A person having xanthochroid traits.</p>
+            <p>XANTHOCHROISM<br>
+            Xan*thoch"ro*ism, n.
+            </p>
+            <p>Defn: Abnormal coloration of feathers in which yellow replaces the
+            normal color, as in certain parrots. It is commonly due to lack of
+            the dark pigment which with yellow forms green.</p>
+            <p>XANTHODONTOUS<br>
+            Xan`tho*don"tous, a. [Xantho-+ Gr. 'odoy`s, 'odo`ntos, tooth.]
+            </p>
+            <p>Defn: Having yellow teeth.</p>
+            <p>XANTHOGEN
+            Xan"tho*gen, n. [Xantho- + -gen.] (Chem.)
+             (a) The hypothetical radical supposed to be characteristic of
+            xanthic acid. [Archaic]
+             (b) Persulphocyanogen.  [R.]</p>
+            <p>XANTHOGENATE<br>
+            Xan"tho*gen*ate, n. (Chem.)
+            </p>
+            <p>Defn: A salt of xanthic acid.</p>
+            <p>XANTHOGENIC<br>
+            Xan`tho*gen"ic, a. [See Xantho-, and -gen.] (Chem.)
+            </p>
+            <p>Defn: Producing a yellow color or compound; xanthic.  See Xanthic
+            acid, under Xanthic.</p>
+            <p>XANTHOMA<br>
+            Xan*tho"ma, n. [NL.  See Xantho-, and -oma.] (Med.)
+            </p>
+            <p>Defn: A skin disease marked by the development or irregular yellowish
+            patches upon the skin, especially upon the eyelids; — called also
+            xanthelasma.</p>
+            <p>XANTHOMATOUS<br>
+            Xan*thom"a*tous, a. (Med.)
+            </p>
+            <p>Defn: Of or pertaining to xanthoma.</p>
+            <p>XANTHOMELANOUS<br>
+            Xan`tho*mel"a*nous, a. [Pref. xantho- + Gr. , , black.] (Ethnol.)
+            </p>
+            <p>Defn: Of or pertaining to the lighter division of the Melanochroi, or
+            those races having an olive or yellow complexion and black hair.</p>
+            <p>XANTHOPHANE<br>
+            Xan"tho*phane, n. [Xantho- + Gr. fai`nein to show.] (Physiol.)
+            </p>
+            <p>Defn: The yellow pigment present in the inner segments of the retina
+            in animals.  See Chromophane.</p>
+            <p>XANTHOPHYLL<br>
+            Xan"tho*phyll, n. [Xantho- + Gr. fy`llon leaf.] (Bot.)
+            </p>
+            <p>Defn: A yellow coloring matter found in yellow autumn leaves, and
+            also produced artificially from chlorophyll; — formerly called also
+            phylloxanthin.</p>
+            <p>XANTHOPOUS<br>
+            Xan"tho*pous, a. [Xantho- + Gr. poy`s, podo`s, foot.] (Bot.)
+            </p>
+            <p>Defn: Having a yellow stipe, or stem.</p>
+            <p>XANTHOPROTEIC<br>
+            Xan`tho*pro*te"ic, a. (Physiol. Chem.)
+            </p>
+            <p>Defn: Pertaining to, or derived from, xanthoprotein; showing the
+            characters of xanthoprotein; as, xanthoproteic acid; the
+            xanthoproteic reaction for albumin.</p>
+            <p>XANTHOPROTEIN<br>
+            Xan`tho*pro"te*in, n. [Xantho-+ protein.] (Physiol. Chem.)
+            </p>
+            <p>Defn: A yellow acid substance formed by the action of hot nitric acid
+            on albuminous or proteid matter. It is changed to a deep orange-
+            yellow color by the addition of ammonia.</p>
+            <p>XANTHOPUCCINE<br>
+            Xan`tho*puc"cine, n. [Xantho-+ puccoon + -ine.] (Chem.)
+            </p>
+            <p>Defn: One of three alkaloids found in the root of the yellow puccoon
+            (Hydrastis Canadensis). It is a yellow crystalline substance, and
+            resembles berberine.</p>
+            <p>XANTHORHAMNIN
+            Xan`tho*rham"nin, n. [Xantho-+ NL. Rhamnus, the generic name of the
+            plant bearing Persian berries.] (Chem.)</p>
+            <p>Defn: A glucoside extracted from Persian berries as a yellow
+            crystalline powder, used as a dyestuff.</p>
+            <p>XANTHORHIZA<br>
+            Xan`tho*rhi"za, n. [NL., fr. Gr. xanqo`s yellow + "ri`za root.]<br>
+            (Bot.)
+            </p>
+            <p>Defn: A genus of shrubby ranunculaceous plants of North America,
+            including only the species Xanthorhiza apiifolia, which has roots of
+            a deep yellow color; yellowroot. The bark is intensely bitter, and is
+            sometimes used as a tonic.</p>
+            <p>XANTHORHOEA<br>
+            Xan`tho*rhoe"a, n. Etym: [NL., from Gr. xanqo`s yellow + (Bot.)
+            </p>
+            <p>Defn: A genus of endogenous plants, native to Australia, having a
+            thick, sometimes arborescent, stem, and long grasslike leaves. See
+            Grass tree.</p>
+            <p>XANTHOSE<br>
+            Xan"those, n. (Chem.)
+            </p>
+            <p>Defn: An orange-yellow substance found in pigment spots of certain
+            crabs.</p>
+            <p>XANTHOSIS<br>
+            Xan*tho"sis, n. Etym: [NL., fr. Gr. xanqo`s yellow.] (Med.)
+            </p>
+            <p>Defn: The yellow discoloration often observed in cancerous tumors.</p>
+            <p>XANTHOSPERMOUS<br>
+            Xan`tho*sper"mous, a. Etym: [Xantho- + Gr. (Bot.)
+            </p>
+            <p>Defn: Having yellow seeds.</p>
+            <p>XANTHOUS<br>
+            Xan"thous, a. Etym: [Gr.
+            </p>
+            <p>Defn: Yellow; specifically (Ethnol.), of or pertaining to those races
+            of man which have yellowish, red, auburn, or brown hair.</p>
+            <p>XANTHOXYLENE<br>
+            Xan*thox"y*lene, n. Etym: [See Xanthoxylum.] (Chem.)
+            </p>
+            <p>Defn: A liquid hydrocarbon of the terpene series extracted from the
+            seeds of a Japanese prickly ash (Xanthoxylum pipertium) as an
+            aromatic oil.</p>
+            <p>XANTHOXYLUM
+            Xan*thox"y*lum, n. Etym: [NL., from Gr. xanqo`s yellow + xy`lon
+            wood.] (Bot.)</p>
+            <p>Defn: A genus of prickly shrubs or small trees, the bark and rots of
+            which are of a deep yellow color; prickly ash.</p>
+            <p>Note: The commonest species in the Northern United States is<br>
+            Xanthoxylum Americanum. See Prickly ash, under Prickly.
+            </p>
+            <p>XEBEC
+            Xe"bec, n. Etym: [Sp. jabegue, formerly spelt xabeque, or Pg. xabeco;
+            both from Turk. sumbeki a kind of Asiatic ship; cf. Per. sumbuk, Ar.
+            sumb a small ship.] (Naut.)</p>
+            <p>Defn: A small three-masted vessel, with projecting bow stern and
+            convex decks, used in the Mediterranean for transporting merchandise,
+            etc. It carries large square sails, or both. Xebecs were formerly
+            armed and used by corsairs.</p>
+            <p>XEME<br>
+            Xeme (zem), n. (Zoöl.)
+            </p>
+            <p>Defn: An Arctic fork-tailed gull (Xema Sabinii).</p>
+            <p>XENELASIA<br>
+            Xen`e*la"si*a, n. Etym: [NL., from Gr. (Gr. Antiq.)
+            </p>
+            <p>Defn: A Spartan institution which prohibited strangers from residing
+            in Sparta without permission, its object probably being to preserve
+            the national simplicity of manners.</p>
+            <p>XENIUM<br>
+            Xe"ni*um, n.; pl. Xenia. Etym: [L., from Gr. (Class. Antiq.)
+            </p>
+            <p>Defn: A present given to a guest or stranger, or to a foreign
+            ambassador.</p>
+            <p>XENODOCHIUM
+            Xen`o*do*chi"um, n. Etym: [LL., fr. L. xenodochium a building for the
+            reception of strangers, Gr. (a) (Class. Antiq.)</p>
+            <p>Defn: A house for the reception of strangers.
+            (b) In the Middle Ages, a room in a monastery for the reception and
+            entertainment of strangers and pilgrims, and for the relief of
+            paupers. [Called also Xenodocheion.]</p>
+            <p>XENODOCHY<br>
+            Xe*nod"o*chy, n. Etym: [Gr.
+            </p>
+            <p>Defn: Reception of strangers; hospitality. [R.]</p>
+            <p>XENOGAMY<br>
+            Xe*nog"a*my, n. Etym: [Gr. xe`nos strange, foreign + (Bot.)
+            </p>
+            <p>Defn: Cross fertilization.</p>
+            <p>XENOGENESIS
+            Xen`o*gen"e*sis, n. Etym: [Gr. xe`nos a stranger + E. genesis.]
+            (Biol.)
+            (a) Same as Heterogenesis.
+            (b) The fancied production of an organism of one kind by an organism
+            of another. Huxley.</p>
+            <p>XENOGENETIC<br>
+            Xen`o*ge*net"ic, a. (Biol.)
+            </p>
+            <p>Defn: Of or pertaining to xenogenesis; as, the xenogenetic origin of
+            microzymes. Huxley.</p>
+            <p>XENOMANIA<br>
+            Xen`o*ma"ni*a, n. Etym: [Gr. xe`nos strange + E. mania.]
+            </p>
+            <p>Defn: A mania for, or an inordinate attachment to, foreign customs,
+            institutions, manners, fashions, etc. [R.] Saintsbury.</p>
+            <p>XENOMI<br>
+            Xen"o*mi, n. pl. Etym: [NL., from Gr. xe`nos strange.] (Zoöl.)
+            </p>
+            <p>Defn: A suborder of soft-rayed fresh-water fishes of which the
+            blackfish of Alaska (Dallia pectoralis) is the type.</p>
+            <p>XENON<br>
+            Xen"on, n. [Gr. , neut. of  strange.] (Chem.)
+            </p>
+            <p>Defn: A very heavy, inert gaseous element occurring in the atmosphere
+            in the proportion of one volume is about 20 millions. It was
+            discovered by Ramsay and Travers in 1898. It can be condensed to a
+            liquid boiling at -109º C., and to a solid which volatilizes without
+            melting. Symbol Xe or X; atomic weight 130.2.</p>
+            <p>XENOPTERYGII<br>
+            Xe*nop`te*ryg"i*i, n. pl. Etym: [NL., from Gr. xe`nos strange +<br>
+            (Zoöl.)
+            </p>
+            <p>Defn: A suborder of fishes including Gobiesox and allied genera.
+            These fishes have soft-rayed fins, and a ventral sucker supported in
+            front by the pectoral fins. They are destitute of scales.</p>
+            <p>XENOTIME<br>
+            Xen"o*time, n. Etym: [Gr. xe`nos guest, stranger + xenotim.] (Min.)
+            </p>
+            <p>Defn: A native phosphate of yttrium occurring in yellowish-brown
+            tetragonal crystals.</p>
+            <p>XENURINE<br>
+            Xe*nu"rine, n. Etym: [Gr. xe`nos strange + (Zoöl.)
+            </p>
+            <p>Defn: A cabassou.</p>
+            <p>XENYL<br>
+            Xen"yl, n. Etym: [Gr. xe`nos strange + -yl.] (Chem.)
+            </p>
+            <p>Defn: The radical characteristic of xenylic compounds.</p>
+            <p>XENYLIC<br>
+            Xe*nyl"ic, a. (Chem.)
+            </p>
+            <p>Defn: Pertaining to, derived from, designating, certain amido
+            compounds obtained by reducing certain nitro derivatives of diphenyl.</p>
+            <p>XERAPHIM
+            Xer"a*phim, n. Etym: [Pg. xarafin, xerafin, fr. Ar. ashrafi noble,
+            the name of a gold coin.]</p>
+            <p>Defn: An old money of account in Bombay, equal to three fifths of a
+            rupee.</p>
+            <p>XERES<br>
+            Xer"es, n.
+            </p>
+            <p>Defn: Sherry. See Sherry.</p>
+            <p>XERIF<br>
+            Xer"if, n.
+            </p>
+            <p>Defn: A shereef.</p>
+            <p>XERIFF<br>
+            Xer"iff, n. Etym: [See Shereef.]
+            </p>
+            <p>Defn: A gold coin formerly current in Egypt and Turkey, of the value
+            of about 9s. 6d., or about $2.30; — also, in Morocco, a ducat.</p>
+            <p>XERODERMA
+            Xe`ro*der"ma, n. Etym: [NL., fr. Gr. (Med.)
+            (a) Ichthyosis.
+            (b) A skin disease characterized by the presence of numerous small
+            pigmented spots resembling freckles, with which are subsequently
+            mingled spots of atrophied skin.</p>
+            <p>XERONATE<br>
+            Xe"ro*nate, n. (Chem.)
+            </p>
+            <p>Defn: A salt of xeronic acid.</p>
+            <p>XERONIC<br>
+            Xe*ron"ic, a. Etym: [Gr. conic.] (Chem.)
+            </p>
+            <p>Defn: Pertaining to, or designating, an acid, C8H12O4, related to
+            fumaric acid, and obtained from citraconic acid as an oily substance
+            having a bittersweet taste; — so called from its tendency to form
+            its anhydride.</p>
+            <p>XEROPHAGY<br>
+            Xe*roph"a*gy, n. Etym: [L. xerophagia, Gr.
+            </p>
+            <p>Defn: Among the primitive Christians, the living on a diet of dry
+            food in Lent and on other fasts.</p>
+            <p>XEROPHILOUS<br>
+            Xe*roph"i*lous, a. Etym: [Gr. (Bot.)
+            </p>
+            <p>Defn: Drought-loving; able withstand the absence or lack of moisture.<br>
+            Plants which are peculiarly adapted to dry climates are termed by De<br>
+            Candolle xerophilous. Goodale.
+            </p>
+            <p>XEROPHTHALMIA<br>
+            Xe`roph*thal"mi*a, n. Etym: [L., fr. Gr. Ophthalmia.] (Med.)
+            </p>
+            <p>Defn: An abnormal dryness of the eyeball produced usually by long-
+            continued inflammation and subsequent atrophy of the conjunctiva.</p>
+            <p>XEROPHTHALMY<br>
+            Xe`roph*thal"my, n. (Med.)
+            </p>
+            <p>Defn: Xerophthalmia.</p>
+            <p>XIPHIAS<br>
+            Xiph"i*as, n. Etym: [L., a swordfish, a sword-shaped comet, fr. Gr.
+            </p>
+            <p>1. (Zoöl.)</p>
+            <p>Defn: A genus of fishes comprising the common swordfish.</p>
+            <p>2. (Anat.)
+            (a) The constellation Dorado.
+            (b) A comet shaped like a sword</p>
+            <p>XIPHIDIUM<br>
+            Xi*phid"i*um, n. Etym: [NL., from Gr. xi`fos sword.] (Bot.)
+            </p>
+            <p>Defn: A genus of plants of the order Hæmodraceæ, having two-ranked,
+            sword-shaped leaves.</p>
+            <p>XIPHIOID<br>
+            Xiph"i*oid, a. Etym: [Xiphius + -oid.] (Zoöl.)
+            </p>
+            <p>Defn: Of, pertaining to, or resembling, a cetacean of the genus<br>
+            Xiphius or family Xiphiidæ.
+            </p>
+            <p>XIPHIPLASTRON
+            Xiph"i*plas"tron, n.; pl. Xiphiplastra. Etym: [NL., fr. Gr. xi`fos a
+            sword + plastron.] (Anat.)</p>
+            <p>Defn: The posterior, or fourth, lateral plate in the plastron of
+            turtles; — called also xiphisternum.</p>
+            <p>XIPHISTERNUM
+            Xiph"i*ster"num, n.; pl. Xiphisterna. Etym: [NL., fr. Gr. xi`fos a
+            sword + sternum.] (Anat.)
+            (a) The posterior segment, or extremity, of the sternum; — sometimes
+            called metasternum, ensiform cartilage, ensiform process, or xiphoid
+            process.
+            (b) The xiphiplastron.
+             — Xiph"i*ster"nal a.</p>
+            <p>XIPHIUS<br>
+            Xiph"i*us, n. Etym: [NL., fr. Gr. xi`fos a sword.] (Zoöl.)
+            </p>
+            <p>Defn: A genus of cetaceans having a long, pointed, bony beak, usually
+            two tusklike teeth in the lower jaw, but no teeth in the upper jaw.</p>
+            <p>XIPHODON<br>
+            Xiph"o*don, n. Etym: [Gr. xi`fos a sword + (Paleon.)
+            </p>
+            <p>Defn: An extinct genus of artiodactylous mammals found in the
+            European Tertiary formations. It had slender legs, didactylous feet,
+            and small canine teeth.</p>
+            <p>XIPHOID
+            Xiph"oid, a. Etym: [Gr. xi`fos a sword + xiphoide.] (Anat.)
+            (a) Like a sword; ensiform.
+            (b) Of or pertaining to the xiphoid process; xiphoidian.</p>
+            <p>XIPHOIDIAN<br>
+            Xiph*oid"i*an, a. (Anat.)
+            </p>
+            <p>Defn: Xiphoid.</p>
+            <p>XIPHOPHYLLOUS<br>
+            Xi*phoph"yl*lous, a. Etym: [Gr. xi`fos sword + (Bot.)
+            </p>
+            <p>Defn: Having sword-shaped leaves.</p>
+            <p>XIPHOSURA<br>
+            Xiph`o*su"ra, n. pl.
+            </p>
+            <p>Defn: See Xiphura.</p>
+            <p>XIPHURA<br>
+            Xi*phu"ra, n. pl. Etym: [NL., from Gr. xi`fos sword + (Zoöl.)
+            </p>
+            <p>Defn: Same as Limuloidea. Called also Xiphosura. X ray. See under<br>
+            Ray.
+            </p>
+            <p>XP<br>
+            XP. [Belongs here in appearance only.]
+            </p>
+            <p>Defn: The first two letters of the Greek word XRISTOS, Christ; — an
+            abbreviation used with the letters separate or, oftener, in a
+            monogram, often inclosed in a circle, as a symbol or emblem of
+            Christ. It use as an emblem was introduced by Constantine the Great,
+            whence it is known as the Constantinian symbol, or monogram. See
+            Labarum.</p>
+            <p>X RAYS; X-RAYS<br>
+            X rays, or X"-rays`, n. pl.
+            </p>
+            <p>Defn: The Röntgen rays; — so called by their discoverer because of
+            their enigmatical character.</p>
+            <p>X-RAY TUBE<br>
+            X"-ray" tube. (Physics)
+            </p>
+            <p>Defn: A vacuum tube suitable for producing Röntgen rays.</p>
+            <p>XYLAMIDE<br>
+            Xy*lam"ide, n. Etym: [Xylic + amide.] (Chem.)
+            </p>
+            <p>Defn: An acid amide derivative of xylic acid, obtained as a white
+            crystalline substance.</p>
+            <p>XYLAN<br>
+            Xy"lan, n. (Chem.)
+            </p>
+            <p>Defn: A gummy substance of the pentosan class, present in woody
+            tissue, and yielding xylose on hydrolysis; wood gum.</p>
+            <p>XYLANTHRAX<br>
+            Xy*lan"thrax, n. Etym: [Gr. xy`lon wood +
+            </p>
+            <p>Defn: Wood coal, or charcoal; — so called in distinction from
+            mineral coal.</p>
+            <p>XYLATE<br>
+            Xy"late, n. (Chem.)
+            </p>
+            <p>Defn: A salt of xylic acid.</p>
+            <p>XYLEM<br>
+            Xy"lem, n. Etym: [Gr. xy`lon wood.] (Bot.)
+            </p>
+            <p>Defn: That portion of a fibrovascular bundle which has developed, or
+            will develop, into wood cells; — distinguished from phloëm.</p>
+            <p>XYLENE<br>
+            Xy"lene, n. Etym: [Gr. xy`lon wood.] (Chem.)
+            </p>
+            <p>Defn: Any of a group of three metameric hydrocarbons of the aromatic
+            series, found in coal and wood tar, and so named because found in
+            crude wood spirit. They are colorless, oily, inflammable liquids,
+            C6H4.(CH3)2, being dimethyl benzenes, and are called respectively
+            orthoxylene, metaxylene, and paraxylene. Called also xylol.</p>
+            <p>Note: Each of these xylenes is the nucleus and prototype of a
+            distinct series of compounds.</p>
+            <p>XYLENOL<br>
+            Xy"le*nol, n. Etym: [Xylene + -ol.] (Chem.)
+            </p>
+            <p>Defn: Any one of six metameric phenol derivatives of xylene, obtained
+            as crystalline substances, (CH3)2.C6H3.OH.</p>
+            <p>XYLETIC<br>
+            Xy*let"ic, a. (Chem.)
+            </p>
+            <p>Defn: Pertaining to, or designating, a complex acid related to
+            mesitylenic acid, obtained as a white crystalline substance by the
+            action of sodium and carbon dioxide on crude xylenol.</p>
+            <p>XYLIC<br>
+            Xy"lic, a. (Chem.)
+            </p>
+            <p>Defn: Pertaining to, derived from, or related to, xylene;
+            specifically, designating any one of several metameric acids produced
+            by the partial oxidation of mesitylene and pseudo-cumene.</p>
+            <p>XYLIDIC<br>
+            Xy*lid"ic, a. (Chem.)
+            </p>
+            <p>Defn: Pertaining to, or designating, either one of two distinct acids
+            which are derived from xylic acid and related compounds, and are
+            metameric with uvitic acid.</p>
+            <p>XYLIDINE<br>
+            Xy"li*dine, n. (Chem.)
+            </p>
+            <p>Defn: Any one of six metameric hydrocarbons, (CH3)2.C6H3.NH2,
+            resembling aniline, and related to xylene. They are liquids, or
+            easily fusible crystalline substances, of which three are derived
+            from metaxylene, two from orthoxylene, and one from paraxylene. They
+            are called the amido xylenes.</p>
+            <p>Note: The xylidine of commerce, used in making certain dyes, consists
+            chiefly of the derivatives of paraxylene and metaxylene.</p>
+            <p>XYLINDEIN<br>
+            Xy*lin"de*in, n. (Chem.)
+            </p>
+            <p>Defn: A green or blue pigment produced by Peziza in certain kinds of
+            decayed wood, as the beech, oak, birch, etc., and extracted as an
+            amorphous powder resembling indigo.</p>
+            <p>XYLITE<br>
+            Xy"lite, n. Etym: [Gr. xy`lon wood.] (Chem.)
+            </p>
+            <p>Defn: A liquid hydrocarbon found in crude wood spirits.</p>
+            <p>XYLITONE<br>
+            Xy"li*tone, n. (Chem.)
+            </p>
+            <p>Defn: A yellow oil having a geraniumlike odor, produced as a side
+            product in making phorone; — called also xylite oil.</p>
+            <p>XYLO-<br>
+            Xy"lo-.
+            </p>
+            <p>Defn: A combining form from Gr. xy`lon wood; as in xylogen,
+            xylograph.</p>
+            <p>XYLOBALSAMUM
+            Xy`lo*bal"sa*mum, n. Etym: [NL., fr. Gr. xy`lon wood + xylobalsamum
+            balsam wood, Gr. (Med.)</p>
+            <p>Defn: The dried twigs of a Syrian tree (Balsamodendron Gileadense).<br>
+            U. S. Disp.
+            </p>
+            <p>XYLOCARPOUS<br>
+            Xy`lo*car"pous, a. Etym: [Xylo- + Gr. (Bot.)
+            </p>
+            <p>Defn: Bearing fruit which becomes hard or woody.</p>
+            <p>XYLOCOPA<br>
+            Xy*loc"o*pa, n. Etym: [NL., fr. Gr. xy`lon wood + (Zoöl.)
+            </p>
+            <p>Defn: A genus of hymenopterous insects including the carpenter. See<br>
+            Carpenter bee, under Carpenter.<br>
+             — Xy*loc"o*pine, a.
+            </p>
+            <p>XYLOGEN
+            Xy"lo*gen, n. Etym: [Xylo- + -gen.]
+            (a) (Bot.) Nascent wood; wood cells in a forming state.
+            (b) Lignin.</p>
+            <p>XYLOGRAPH<br>
+            Xy"lo*graph, n. Etym: [Xylo- + -graph.]
+            </p>
+            <p>Defn: An engraving on wood, or the impression from such an engraving;
+            a print by xylography.</p>
+            <p>XYLOGRAPHER<br>
+            Xy*log"ra*pher, n.
+            </p>
+            <p>Defn: One who practices xylography.</p>
+            <p>XYLOGRAPHIC; XYLOGRAPHICAL<br>
+            Xy`lo*graph"ic, Xy`lo*graph"ic*al, a. Etym: [Cf. F. xylographique.]
+            </p>
+            <p>Defn: Of or pertaining to xylography, or wood engraving.</p>
+            <p>XYLOGRAPHY<br>
+            Xy*log"ra*phy, n. Etym: [Xylo- + -graphy: cf. F. xylographie.]
+            </p>
+            <p>1. The art of engraving on wood.</p>
+            <p>2. The art of making prints from the natural grain of wood. Knight.</p>
+            <p>3. A method pf printing in colors upon wood for purposes of house
+            decoration. Ure.</p>
+            <p>XYLOID<br>
+            Xy"loid, a. Etym: [Xylo- + -oid.]
+            </p>
+            <p>Defn: Resembling wood; having the nature of wood.</p>
+            <p>XYLOIDIN<br>
+            Xy*loid"in, n. Etym: [Xylo- + -oid.] (Chem.)
+            </p>
+            <p>Defn: A substance resembling pyroxylin, obtained by the action of
+            nitric acid on starch; — called also nitramidin.</p>
+            <p>XYLOL<br>
+            Xy"lol, n. Etym: [Xylo- + L. oleum oil.] (Chem.)
+            </p>
+            <p>Defn: Same as Xylene.</p>
+            <p>XYLOLOGY<br>
+            Xy*lol"o*gy, n. [Pref. xylo-+ -logy.]
+            </p>
+            <p>Defn: The branch of dendrology treating of the gross and minute
+            structure of wood.</p>
+            <p>XYLONITE<br>
+            Xy"lon*ite, n.
+            </p>
+            <p>Defn: See Zylonite.</p>
+            <p>XYLOPHAGA<br>
+            Xy*loph"a*ga, n. Etym: [NL. See Xylophagous.] (Zoöl.)
+            </p>
+            <p>Defn: A genus of marine bivalves which bore holes in wood. They are
+            allied to Pholas.</p>
+            <p>XYLOPHAGAN
+            Xy*loph"a*gan, n. Etym: [See Xylophagous.] (Zoöl.)
+            (a) One of a tribe of beetles whose larvæ bore or live in wood.
+            (b) Any species of Xylophaga.
+            (c) Any one of the Xylophagides.</p>
+            <p>XYLOPHAGIDES<br>
+            Xy`lo*phag"i*des, n. pl. Etym: [See Xylophagous.] (Zoöl.)
+            </p>
+            <p>Defn: A tribe or family of dipterous flies whose larvæ live in
+            decayed wood. Some of the tropical species are very large.</p>
+            <p>XYLOPHAGOUS
+            Xy*loph"a*gous, a. Etym: [Gr. xy`lon wood + (Zoöl.)
+            (a) Eating, boring in, or destroying, wood; — said especially of
+            certain insect larvæ, crustaceans, and mollusks.
+            (b) Of or pertaining to the genus Xylophaga.</p>
+            <p>XYLOPHILAN<br>
+            Xy*loph"i*lan, n. Etym: [See Xylophilous.] (Zoöl.)
+            </p>
+            <p>Defn: One of a tribe of beetles (Xylophili) whose larvæ live on
+            decayed wood.</p>
+            <p>XYLOPHILOUS<br>
+            Xy*loph"i*lous, a. Etym: [Xylo- + Gr. filei^n to love.] (Zoöl.)
+            </p>
+            <p>Defn: Of or pertaining to the xylophilans.</p>
+            <p>XYLOPHONE<br>
+            Xy"lo*phone, n. Etym: [Xylo- + Gr. fwnh` sound.]
+            </p>
+            <p>1. (Mus.)</p>
+            <p>Defn: An instrument common among the Russians, Poles, and Tartars,
+            consisting of a series of strips of wood or glass graduated in length
+            to the musical scale, resting on belts of straw, and struck with two
+            small hammers. Called in Germany strohfiedel, or straw fiddle.</p>
+            <p>2. An instrument to determine the vibrative properties of different
+            kinds of wood. Knight.</p>
+            <p>XYLOPLASTIC<br>
+            Xy`lo*plas"tic, a. Etym: [Xylo- + -plastic.] (Technol.)
+            </p>
+            <p>Defn: Formed of wood pulp by molds; relating to casts made of wood
+            pulp in molds.</p>
+            <p>XYLOPYROGRAPHY<br>
+            Xy`lo*py*rog"ra*phy. n. Etym: [Xylo- + Gr. -graphy.]
+            </p>
+            <p>Defn: The art or practice of burning pictures on wood with a hot
+            iron; — called also poker painting. See Poker picture, under Poker.</p>
+            <p>XYLOQUINONE<br>
+            Xy`lo*qui"none, n. Etym: [Xylene + quinone.] (Chem.)
+            </p>
+            <p>Defn: Any one of a group of quinone compounds obtained respectively
+            by the oxidation of certain xylidine compounds. In general they are
+            yellow crystalline substances.</p>
+            <p>XYLORCIN<br>
+            Xy*lor"cin, n. Etym: [Xylene + orcin.] (Chem.)
+            </p>
+            <p>Defn: A derivative of xylene obtained as a white crystalline
+            substance which on exposure in the air becomes red; — called also
+            betaorcin.</p>
+            <p>XYLOSE<br>
+            Xy"lose, n. [Pref. xylo- + -ose.] (Chem.)
+            </p>
+            <p>Defn: An unfermentable sugar of the pentose class, C5H10O5, formed by
+            the hydrolysis of xylan; wood sugar.</p>
+            <p>XYLOSTEIN<br>
+            Xy*los"te*in, n. Etym: [Xylo- + Gr. (Chem.)
+            </p>
+            <p>Defn: A glucoside found in the poisonous berries of a species of
+            honeysuckle (Lonicera xylosteum), and extracted as a bitter, white,
+            crystalline substance.</p>
+            <p>XYLOTILE<br>
+            Xy"lo*tile, n.
+            </p>
+            <p>Defn: Same as Parkesine.</p>
+            <p>XYLOTOMIST<br>
+            Xy*lot"o*mist, n.
+            </p>
+            <p>Defn: One versed or engaged in xylotomy.</p>
+            <p>XYLOTOMOUS<br>
+            Xy*lot"o*mous, a. [Pref. xylo-+ root of Gr.  to cut.] (Zoöl.)
+            </p>
+            <p>Defn: Capable of boring or cutting wood; — said of many insects.</p>
+            <p>XYLOTOMY<br>
+            Xy*lot"o*my, n. [Pref. xylo-+ -tomy.]
+            </p>
+            <p>Defn: Art of preparing sections (transverse, tangential, or radial)
+            of wood, esp. by means of a microtome, for microscopic examination.</p>
+            <p>XYLOTRYA<br>
+            Xy*lo"try*a, n. Etym: [NL., fr. Gr. xy`lon wood + (Zoöl.)
+            </p>
+            <p>Defn: A genus of marine bivalves closely allied to Teredo, and
+            equally destructive to timber. One species (Xylotrya fimbriata) is
+            very common on the Atlantic coast of the United States.</p>
+            <p>XYLYL<br>
+            Xy"lyl, n. Etym: [Xylo- + -yl.] (Chem.)
+            </p>
+            <p>Defn: Any one of three metameric radicals which are characteristic
+            respectively of the three xylenes.</p>
+            <p>XYLYLENE<br>
+            Xy"lyl*ene, n. (Chem.)
+            </p>
+            <p>Defn: Any one of three metameric radicals, CH2.C6H4.CH2, derived
+            respectively from the three xylenes. Often used adjectively; as,
+            xylylene alcohol.</p>
+            <p>XYRIDACEOUS<br>
+            Xyr`i*da"ceous, a. (Bot.)
+            </p>
+            <p>Defn: Of or pertaining to a natural order (Xyrideæ) of endogenous
+            plants, of which Xyris is the type.</p>
+            <p>XYRIS<br>
+            Xy"ris, n. Etym: [L., a kind of Iris, Gr. (Bot.)
+            </p>
+            <p>Defn: A genus of endogenous herbs with grassy leaves and small yellow
+            flowers in short, scaly-bracted spikes; yellow-eyed grass. There are
+            about seventeen species in the Atlantic United States.</p>
+            <p>XYST; XYSTUS<br>
+            Xyst, Xys"tus, n. Etym: [L. xystus, Gr. (Anc. Arch.)
+            </p>
+            <p>Defn: A long and open portico, for athletic exercises, as wrestling,
+            running, etc., for use in winter or in stormy weather.</p>
+            <p>XYSTARCH<br>
+            Xyst"arch, n. Etym: [L. xystarches, Gr. (Gr. Antiq.)
+            </p>
+            <p>Defn: An office Dr. W. Smith.</p>
+            <p>XYSTER<br>
+            Xys"ter, n. Etym: [NL., fr. Gr. (Surg.)
+            </p>
+            <p>Defn: An instrument for scraping bone.</p>
+            </div><!--end chapter-->
+            <div>
+                <h6>Commands</h6>
+                <ul>
+                    <li class="highlight" style="--theme:#e65763"><b>Ctrl+R</b> : Red Text</li>
+                    <li class="highlight" style="--theme:#f7f779"><b>Ctrl+Y</b> : Yellow Text</li>
+                    <li class="highlight" style="--theme:#2ce4e8"><b>Ctrl+B</b> : Blue Text</li>
+                    <li class="highlight" style="--theme:#6eee87"><b>Ctrl+G</b> : Green Text</li>
+                </ul>
+            </div>
+    </div>
+    <div class="toc-container">
+        <a href="../w/index.html" class="toc-item">W</a>
+        <a href="../index.html" class="toc-item">MENU</a>
+        <a href="../y/index.html" class="toc-item">Y</a>
+        
+      </div>
+    <script>
+        function searchAndHighlight() {
+            // Get the search term from input
+            const searchTerm = document.getElementById("searchBox").value.trim();
+            if (!searchTerm) return; // Exit if search term is empty
+            
+            // Get the dictionary content div
+            const dictionaryDiv = document.getElementById("dictionary");
+            
+            // Clear previous highlights
+            dictionaryDiv.innerHTML = dictionaryDiv.innerHTML.replace(/<span class="highlight">(.*?)<\/span>/g, "$1");
+
+            // Search for all occurrences of the word (case-insensitive)
+            const regex = new RegExp(`\\b(${searchTerm})\\b`, "gi");
+            let matchCount = 0;
+            dictionaryDiv.innerHTML = dictionaryDiv.innerHTML.replace(regex, (match) => {
+                matchCount++;
+                return `<span class="highlight">${match}</span>`;
+            });
+
+            if (matchCount > 0) {
+                // Scroll to the first occurrence only
+                const firstHighlight = document.querySelector(".highlight");
+                if (firstHighlight) {
+                    firstHighlight.scrollIntoView({ behavior: "smooth", block: "center" });
+                }
+            } else {
+                alert("Word not found!");
+            }
+        }
+    </script>
+<script>
+    console.clear();
+    
+    const textarea = document.querySelector("div[contenteditable='true']");
+    
+    function KeyPress(e) {
+        const selectedText = selection();
+        let evtobj = window.event ? event : e;
+        if (evtobj.keyCode === 82 && evtobj.ctrlKey && selectedText[1])
+            color(selectedText, "#e65763");
+        else if (evtobj.keyCode === 89 && evtobj.ctrlKey && selectedText[1])
+            color(selectedText, "#f7f779");
+        else if (evtobj.keyCode === 66 && evtobj.ctrlKey && selectedText[1])
+            color(selectedText, "#2ce4e8");
+        else if (evtobj.keyCode === 71 && evtobj.ctrlKey && selectedText[1])
+            color(selectedText, "#6eee87");
+    }
+    function color(text, color) {
+        document.querySelector("div[contenteditable='true']").innerHTML = `${
+            textarea.innerHTML.split(text)[0]
+        }<span class="highlight" style="--theme:${color}">${text}</span>${
+            textarea.innerHTML.split(text)[1]
+        }`;
+    }
+    function selection() {
+        if (textarea.innerHTML.includes(document.getSelection())) {
+            // console.log(
+            // 	textarea.innerText.substring(0, document.getSelection().anchorOffset)
+            // );
+            // console.log(document.getSelection().getRangeAt(0));
+            // return [
+            // 	textarea.innerText.substring(0, document.getSelection().anchorOffset),
+            // 	textarea.innerText.substring(
+            // 		document.getSelection().anchorOffset,
+            // 		document.getSelection().extentOffset
+            // 	),
+            // 	textarea.innerText.substring(document.getSelection().extentOffset)
+            // ];
+            return document.getSelection().toString();
+        }
+    }
+    
+    document.onkeydown = KeyPress;
+    
+        </script>
+</body>
+</html>
