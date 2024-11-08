@@ -34013,6 +34013,50 @@ background-color: var(--theme);
             }
         }
     </script>
+<script>
+console.clear();
 
+const textarea = document.querySelector("div[contenteditable='true']");
+
+function KeyPress(e) {
+	const selectedText = selection();
+	let evtobj = window.event ? event : e;
+	if (evtobj.keyCode === 82 && evtobj.ctrlKey && selectedText[1])
+		color(selectedText, "#e65763");
+	else if (evtobj.keyCode === 89 && evtobj.ctrlKey && selectedText[1])
+		color(selectedText, "#f7f779");
+	else if (evtobj.keyCode === 66 && evtobj.ctrlKey && selectedText[1])
+		color(selectedText, "#2ce4e8");
+	else if (evtobj.keyCode === 71 && evtobj.ctrlKey && selectedText[1])
+		color(selectedText, "#6eee87");
+}
+function color(text, color) {
+	document.querySelector("div[contenteditable='true']").innerHTML = `${
+		textarea.innerHTML.split(text)[0]
+	}<span class="highlight" style="--theme:${color}">${text}</span>${
+		textarea.innerHTML.split(text)[1]
+	}`;
+}
+function selection() {
+	if (textarea.innerHTML.includes(document.getSelection())) {
+		// console.log(
+		// 	textarea.innerText.substring(0, document.getSelection().anchorOffset)
+		// );
+		// console.log(document.getSelection().getRangeAt(0));
+		// return [
+		// 	textarea.innerText.substring(0, document.getSelection().anchorOffset),
+		// 	textarea.innerText.substring(
+		// 		document.getSelection().anchorOffset,
+		// 		document.getSelection().extentOffset
+		// 	),
+		// 	textarea.innerText.substring(document.getSelection().extentOffset)
+		// ];
+		return document.getSelection().toString();
+	}
+}
+
+document.onkeydown = KeyPress;
+
+    </script>
 </body>
 </html>
